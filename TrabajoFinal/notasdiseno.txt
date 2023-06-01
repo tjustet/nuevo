@@ -1,0 +1,22 @@
+pagina donde podes crear una playlist con amigos donde se reproduzca en bucle esa playlist estes en la zona que estes de la pagina.
+
+principal:
+    lugar donde añadir amigos 
+    agregar musica
+    subir o bajar el volumen de la musica
+    reproduccion de musica 
+
+secundario:
+    chat de texto y de voz
+    personalizar el perfil
+
+terceario:
+    zona de juegos:
+        teteti
+        ruleta rusa
+        yo nunca nunca
+        cartas
+        
+
+
+

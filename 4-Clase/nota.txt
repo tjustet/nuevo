@@ -1,0 +1,73 @@
+Unidades de medida:
+    obsoluda: px
+    relativa: 
+        rem: relativa a la configuracion del tamaño de la raiz (1rem = 16px)
+            si se realiza un cambio porcentual en todo el html el rem cambia, ejemplo: html{font-size: 62.5%} esto hace que el rem sea de 10px
+            el rem sirve para que se vea bien en celular y computadora se vean bien las cosas 
+        porcentaje: %
+        viewprot: se mide en relacion a la parte visible de la ventana del navegdor 
+
+tipografia: google fonts
+    tipografia local: son las que tenemos ya descargadas en las computadoras por predeterminado
+        @font-face{font-family: "nombre de la tipografia";
+            src: url:("direccion de la carpeta donde este la fuente, termina en ttf");}
+    tipografia web: tambien esta la manera web entrando a la pagina fonts seleccionar las que me gustan y copiar el link arriba a la izquierda 
+        se pega en el head
+        y despues en el css se llaman ej:
+            h3{font-family: 'Nunito', sans-serif;
+                font-weight: 900 (tamaño del grosor de la letra dependiendo si se descargo ese tipo)}
+
+box model:
+    concepto: todo es una caja
+    ancho: windth
+    alto: height
+    ambos se basan segun el ancho y altura del elemento padre
+
+    propiedades en comun:
+        margin: espaciado externo
+                margin-top: 50px arriba
+                margin-right: 100px derecha
+                margin-bottom: 20px abajo
+                margin-left: 120px izquierda
+                el espacio que va a tener un box de otras cosas
+                tambien se puede usar con margin: 50px 100px 20px 120px
+                si se ponen 2 valores es para arriba y abajo y si se pone un solo valor se les pone a todos los valores el mismo
+
+        padding: espacio interno 
+                se usa de la misma manera solamente que cambiando el margin por madding
+        
+        border: son los bordes, si se quiere que el cuadrado sea mas grueso o nombre
+                se le puede poner varios tipos de bordes dotted punteado, dashed lineado, etc
+                tambien se les puede poner colores
+
+overflow: es para que en el caso de que el texto se pase de la caja se le pueda poner un sroll al costado para que asi se mantenga dentro 
+    se usa dentro de la caja
+    visible: por defecto
+    hidden: oculto
+    scroll: barra de scroll en los dos ejes
+    auto: genera el scroll si es necesario
+
+reseteo de css:
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    esto es para que este todo en 0 ya que en algunos casos pueden llegar a tener algo ya puesto y romperia el codigo
+    por defecto los codigos tienen un margin y un padding predeterminados
+
+display:
+    tipos de elementos:
+        linea (display: inline;): se puede usar varios elementos uno alado del otro
+        bloque (display: block): ocupa el 100% a lo ancho y se ponen las cosas uno abajo del otro
+    se puede hacer que un elemento de bloque pase a uno de linea y viceversa 
+    los elementos de linea no se les puede poner ni ancho ni alto y solo a los costados se les puede poner margin y padding
+    display: none (es para que no aparezca)
+
+ENTREGA:
+    7 dias de corrido para entregarlo
+    entrega del proyecto que tenemois hasta ahora
+    wireframe en modo escritorio y mobil sin colores ni imagenes ni nada, simple
+    y los html que fuimos haciendo
+    no poner cosas que no vimos
+
+    tiempos de correccion 120hs habiles

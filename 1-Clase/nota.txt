@@ -1,0 +1,83 @@
+sketch:
+    dibujo rapido de lo que seria nuestro sitio web
+    no es necesario imagenes ni cosas presisas si no algo mas rapido 
+    (a mano)
+
+wireframe:
+    representacion estatica de baja calidad de un diseño 
+    sin colores ni imagenes
+    representacion digital del sketch
+    (moqaps)
+
+mockup:
+    opcional
+    con imagenes y colores
+    calidad media
+    (photochop)
+
+tips para armar un buen sitio:
+    organizar la info con la que vamos a trabajar
+    agrupar, jerarquizar y rotular
+    agrupar contenidos importantes a menos importantes para saber que poner en la pagina principal
+
+    elegir la tipografia correcta 
+    entre 1 a 3 tipografias recomendados
+
+    armar paletas de colores (pag: coolors, colourlovers o adobe color)
+    ir viendo diferentes sitios 
+
+
+Archivos
+    No tener espacios, acentos, ñ. ni simbolos raros
+    principalmente que sean en minusculas
+    root{pages(carp), images(carp), css(carp), scripts(carp), index.html}
+    el index tendria que estar sobre todo 
+
+
+Etiquetas:
+    marcan el principio y el final de cada elemento
+    <etiqueta> contenido </etiqueta>
+    abiertas:
+        sirven para invluir elementos como imagenes lineas entre otros 
+    cerradas:
+        encierran un contenido
+
+    <p>parrafo</p> (cerrada)
+    <hr> linea horizontal (abierta)
+
+    <h1> al <h6> titulo del contenido
+
+
+
+    alt+shit+a = comentario
+
+atributos
+         atributos="valor"
+    <meta charset="UTF-8">
+
+anidar Etiquetas
+    <elemento>
+        <sub>
+        </sub>
+    </elemento>
+    forma correcta de hacerlo 
+    la primera etiqueta que se habra es la ultima en cerrar, no se puede cerrar una que este dentro despues de la primera
+
+sintaxis:
+    tabulaciones
+
+etiquetas semanticas:
+    header: encabezado
+    nav: menu de navegacion
+    main: contenido principal
+    section: contenedor del contenido
+    article: subseccion del contenido
+    aside: publicidades (contenido no tan relevante)
+    footer: pie de pagina
+
+elemento de bloque (uno abajo del otro y ocupa todo el ancho)
+elemento de linea(ocupa el lugar que le corresponda)
+
+
+
+

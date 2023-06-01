@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* login */
+.login{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../images/a.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login-box{
+    width: 320px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.671);
+    color: rgb(255, 255, 255);
+    margin-top: 250px;
+    margin-left: 40%;
+    
+}
+
+.redireccion-login{
+    color: aliceblue;
+    display: block;
+}
+
+.input-login{
+    display: block;
+}
+
+.button-login{
+    display: line;
+    margin-left: 25px;
+}
+
+
+
+
+/*  menu */
+
+.menu{
+    background-image: url("../images/fonfo-menu.jpg");
+}
+
+.grid-menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75px auto 50px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "menu menu"
+    "imagen texto"
+    "footer footer";
+}
+
+.menu-box{
+    background-color: rgb(17, 7, 7);
+    grid-area: menu;
+}
+
+.ul-menu{
+    margin: 0;
+    
+}
+
+.li-menu{
+    display: inline;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.li-img-menu-logo{
+    display: inline;
+    width: 100px;
+    height: 65px;   
+
+}
+
+.li-img-menu{
+    display: inline;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.img-interactivas{
+    height: 500px;
+    width: 19%;
+    grid-area: imagen;
+}
+
+.parrafo-menu{
+    color: white;
+    grid-area: texto;
+    font-size: 30px;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+
+}
+
+.footer{
+    grid-area: footer;
+    background: rgb(17, 7, 7);
+    color: white;
+    text-align: center;
+
+}
+
+
+/* Musica */
+
+.musica{
+    background-image: url("../images/musica/musica\ \(2\).jpeg");
+}
+
+.main-musica{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 50px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "musica texto"
+    "opbus listado"
+    "footer footer";
+}
+
+.video-musica{
+    border: none;
+    padding: 50px 70px 50px 70px;
+    display: inline;
+    grid-area: musica;
+}
+
+.parrafo-musica{
+    color: white;
+    height: auto;
+    width: 90%;
+    font-size: 30px;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    grid-area: texto;
+}
+
+.busqueda-musica{
+    grid-area: opbus;
+}
+  
+.tabla-musica{
+    background-color: white;
+    height: auto;
+    max-height: 500px;
+    width: 90%;
+    margin: 0px 0px 0px 5%;
+    border-collapse: collapse;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    font-size: 20px;
+}
+
+th, td{
+    height: 30px;
+    border: solid 1px;
+}
+
+.tabnum-musica{
+    width: 10%;
+}
+
+
+.busquedatxt-musica{
+    color: white;
+    
+}
+
+
+/* estadisticas */
+
+.estadisticas{
+    background-image: url("../images/images.jpeg"); 
+
+}
+
+.main-estadisticas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto 50px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "imagen1 columna1 imagen2 columna2"
+    "footer footer footer footer";
+}
+
+
+.juegos{
+    display: inline;
+
+}
+
+.colum{
+    column-count: 2;
+    margin: 0;
+
+}
+
+.img-estadisticas-juegos{
+    width: 266px;
+    height: 190px;
+    margin: 0;
+}
+
+
+.titulo-estadistica-juegos{
+    font-size: 70px;
+    color: rgb(64, 3, 126);
+    background-color: rgb(136, 0, 255);
+}
+
+.stats-ganadas{
+    font-size: 25px;
+    color: rgb(17, 255, 0);
+    background-color: rgb(136, 0, 255);}
+
+.stats-perdidas{
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(136, 0, 255);
+}
+
+.stats-empatadas{
+    font-size: 25px;
+    color: rgb(139, 118, 0);
+    background-color: rgb(136, 0, 255);
+}
+
+.stats-promedio{
+    font-size: 25px;
+    color: rgb(0, 56, 105);
+    background-color: rgb(136, 0, 255);
+}
+
+
+
+
+/* contactos */
+
+.contactos{
+    background-image: url("../images/fonfo-menu.jpg");
+}
+
+.main-contactos{
+    margin: 0px 0px 0px 10px;
+}
+
+.titulo-contactos{
+    color: rgb(255, 0, 0);
+    font-size: 75px;
+    
+}
+
+.h2-contactos{
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+}
+
+.datos-contactos{
+    font-size: 50px;
+    color: rgb(255, 0, 242);
+}
+
+.input-contactos{
+    width: 1000px;
+    height: 300px;
+    font-size: 25px;
+    background-color: aqua;
+    
+}
+
+.boton-contactos{
+    font-size: 30px;
+    display: block;
+    background-color: rgb(132, 0, 255);
+}
+
+
+
+
+
+/* minijueigos */
+
+.minijuegos{
+    background-image: url(../images/musica/fondoconmusicadelante.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+.h1-minijuegos{
+    font-size: 100px;
+    color: white;
+}

@@ -1,0 +1,53 @@
+pseudoclases:
+    son palabras claves que se les puede agregar a nuestros selectores y especifica el estado de nuestros elementos seleccionados
+    ejemplos: :hover que es para que haga algun cambio cuando se pone el raton sobre el objeto
+    historial del navegador :visited
+    el estado del contenido :
+    se usan para dar estilos en el elemento cuando el usuario hace cierta acción (:hover), 
+    cuando esta posicionado de cierta manera (.first-child) y/o cuando tienen cierta clase o característica (.not)
+
+
+
+
+
+
+
+BEM: si queremos
+    es para escribir nuestro codigo de manera mas sensilla 
+    es para escribir clases
+    modificador de bloques de elementos (siglas en español)
+    trabajar con modulos 
+
+    bloques (div, section, article, etc)
+        bloque es el contenedor donde tiene los elementos (mayormente son los padres)
+    elementos (a, button, li, span, etc)
+    modificadores
+
+    ejemplos: .header__logo{}, .header__tagline{}, etc
+    (si o si dos __ para saber que usamos esta metodologia)
+    es para tener nombres simples, claros y precisos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+registro
+    pagina inicial 
+        mapa de ubicacion
+        distintas tiendas registradas
+        abajo tiendas mas concurridas(con nombre, direccion, telefono)
+        abajo articulos de compra
+        al seleccionar alguno de estos te llevara a un apartado de esa tienda donde te aparezcan datos sobre estas y las distintas cosas que venda
+            se podra seleccionar objetos agregarlos a carritos y pueden quedar reservados o pueden ser enviados a domicilio 
+        
+        en el menu se encontrara un apartado para poder seleccionar personas para trabajos privados de distintos tipos
+            las personas que se quieran registrar tendran que poner sus datos personales y se tendra que corroborar a traves de una img de documento que sea el
+            tambien se necesitaran datos de la persona que solicita la ayuda en caso de peligros
+    
+
+
+
+
+
+
+
+

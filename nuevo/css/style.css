@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "img busqueda btn sesion";
+}
+
+.logo-header{
+    height: 60px;
+    width: auto;
+    margin: 10px 10px;
+}
+
+.img-header{
+    grid-area: img;
+}
+
+.carrito-header{
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn-box-header{
+    grid-area: btn;
+    align-items: center;
+}
+
+.btn-header{
+    margin: 0 1.5% 0 1.5%;
+    height: 50%;
+
+}
+
+.sesion-box-header{
+    grid-area: sesion;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.btnimg-header{
+    height: 10%;
+    
+
+    overflow: hidden;
+}
+
+.imgsesion-header{
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

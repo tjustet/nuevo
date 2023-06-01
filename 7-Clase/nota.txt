@@ -1,0 +1,45 @@
+diseño responsive:
+    es para que se pueda ver bien a traves de cualquier dispositivo (celular, tablet, pc, etc)
+    se usa media queries, a traves de CSS
+    aplica condicionales a las reglas de CSS, puede hacer que reglas debe ignorar y cuales aplicar
+    tambien funciona para que si en pc tiene fondo azul puedas cambiarlo a otro color si se ve desde mobil (ejemplo)
+    @media (max-width: 599px){} si se tiene menos pixeles la pantalla lo que hace es que se use el codigo de dentro de las {}
+    @media {} si tiene mas pixeles la pantalla se ejecuta el codigo dentro de los{}
+    tambien se puede usar ambos uniendolos con and
+    @media (max-width: 599px) and (min-width: 600px)
+
+    tamaño celular 320px - 480px (normalmente)
+
+    pasa del tamaño mayor (escritorio) al tamaño menor
+    se usa el max-width
+
+mobil first:
+    otro metodo para adaptar la pagina al celular
+    pasa del tamaño menor (celular) al mayor
+    se usa el min-width
+    se hace al reves, primero se disela la pagina para mobil y despues lo agrandamos para celular 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

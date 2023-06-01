@@ -1,0 +1,63 @@
+git: sistema de control de versiones gratuito y de codigo abierto 
+    es para "subir nuestro proyecto a la nube"
+
+    GIT NO ES LO MISMO QUE GITHUB
+    git controla versiones
+    github es un tipo de alogamiento para todos los repositorios que se hacen en el git
+
+    https://git-scm.com/
+    para controlar la instalacion desde terminal es: git --version
+
+    crear usuario para git: git config --global user.name "justett"
+    configurar el mail: git config --global user.email justett2003@gmail.com
+    para revisar: git config --list
+
+    git init para que se cree una nube git
+    git status
+    git add git . (para todo) para pasar de working directory a staging area
+
+
+3 estados de git
+    working directory (es en el que estamos "preparamos las cajas")
+    staging area (es cuando ya estamos "confirmando" nuestra version)
+    repository (es cuando lo subimos a la nube)
+
+
+
+que es un repositorio
+
+
+
+ramas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

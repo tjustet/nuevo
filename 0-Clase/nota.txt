@@ -1,0 +1,43 @@
+se aprueba con 7
+final pagina web con 5 html osea un sitio web
+cada 15 dias after class son clases extras para sacar dudas y demas cosas (son opcionales), duracion 1hs probable que lunes o viernes en el mismo horario
+conceptos basicos:
+	desarrollo web:
+		Marie Quilly
+		Navegabilidad: donde puede ir el usuario
+		interactividad: como pasar de un medio a otro
+		Arquitectura de la info: como organizar este ultimo
+		Herramientas basicas: HTML y CSS
+		HTML: lenguaje de marcado de etiquetas
+		CSS: controla la apariencia de la pagina web
+	Internet:
+		internet: red de equipos de calculo relacionadas entre si a traves de un lenguaje universal
+		Navegador: permite al usuario navegar por distintas paginas
+		buscador: busca todo tipo de informacion en la web 
+
+sitio web: conjunto de documentos html relacionadas
+pagina web: documento html
+
+necesitamos:
+explorador (cualquiera)
+editores de texto (cualquiera, preferencia VSC)
+MOQUPS pagina web cirve para hacer diseño de nuestro proyectos
+terminal o consola
+
+siempre la pagina principal tiene que ser index.html o lo que sea despues del .
+
+tips:
+instalar aplicaciones
+establecer un objetivo a alcanzar
+mantener curiosidad activa
+no quedarse solo con lo visto en clases
+cumplir con los desafios
+practicar
+apoyarse en los recursos de coder
+revisar material complementario
+internet y ganas de aprender son los mejores amigos
+
+beneficios de la dedicacion de estudiantes
+
+
+

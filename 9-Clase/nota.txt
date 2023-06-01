@@ -1,0 +1,75 @@
+librerias y frameworks:
+    libreria: coleccion de elementos para colores, animaciones, etc
+        ejem: ballom.css, cssgram, etc
+    
+    framework: marco de trabajo, diferencia es que es un conjunto de herramientas y de codigos
+        ejem: taiulin?
+
+bootstrap:
+    framework creado por twitter
+    usa html, css, JS
+    sus componentes esta pensada para que el sitio sea responsive
+    trabaja mucho con clases
+    ventajas:
+        simplifica el proceso de maquetacion
+        lo podemos hacer mas rapido
+        es responsive
+        maquetacionpor columnas
+        se integra bien con las principales librerias de JS
+        te permite enriquecer aun mas los estilos de la web
+
+    desventajas:
+        adaptacion, es mas complicado perzonalizarlo
+        mucho css que no se usara
+        mucho uso de clases
+        añadir componentes
+        mantenimiento, si haces muchos cambios
+
+    PAGINA: https://getbootstrap.com/
+
+    opcion 1:
+        descargas el archivo zip y lo extraes
+        en la carmeta css del archivo zip se copia todo y de pega dentro de nuestra carpeta del proyecto
+        despues copias la carpeta js y lo pegas dentro del proyecto
+        dentro del html se agrega un nuevo link:css y agregamos el archivo bootstrap.min.css
+        asi se agregan los estilos de bootstrap
+        primero va este y despues nuestro css para que se superponga al de bootstrap
+
+        archivo de js se pone al final, antes de que termine el body
+        se pone script:src y se busca dentro de la carpeta js bootstrap.min.js
+
+        con estos dos puestos ya tenemos el bootstrap descargado dentro de nuestra pagina de manera local
+        esto ayuda a que si se actualiza el bootstrap no nos va a afectar
+        lo malo es que tenemos archivos que no vamos a usar 
+
+    opcion 2:
+        opcion CDN 
+        nos da un link y un script, vamos al html y los pegamos en el head (siempre arriba de nuestro css)
+        ventaja es que es mas rapido, no tenemos tanto peso ni archivos
+        la desventaja es que si se actualiza puede cambiar algo de nuestra app
+        
+
+    trabaja con una metodologia de contenedores y columnas
+        
+    componentes: tipografia
+        tablas
+        formularios
+        dropdowns (USAR)
+        navbar (USAR)
+        paginaTion (USAR)
+        CAROUSEL (USAR)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
