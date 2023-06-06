@@ -7,6 +7,8 @@ body{
     background-color: black;
 }
 
+/* encabezado */
+
 header{
     background-color: white;
     height: 80px;
@@ -73,16 +75,112 @@ header{
     width: 20px;
 }
 
+
+/* carrusel index */
 .main-index{
-    height: 500px;
-    width: 90%;
-
-
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
 }
 /* MODIFICAR LAS IMAGENES QUE SE ENCUENTRAN DENTRO DEL CARRUSEL PARA QUE NO SE SALGAN */
-.carrusel-div{
+.carruselmain-index{
+    height: 500px;
+    width: 75%
+    
+}
+
+.imgcarrusel-index{
+    height: 500px;
 
 }
+
+.boton-carrusel{
+    width: 70px;
+}
+
+/* mapa */
+
+.sectionmap-index{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.sectionh2-index{
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+    color: white;
+    font-size: 75px;
+    font-family: TINY;
+}
+
+/* tiendas */
+.sectiontiendas-index{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 25px;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 
+    "tittle tittle"
+    "column1 column2";
+}
+
+.navh2-index{
+    grid-area: tittle;
+    color: white;
+    font-size: 75px;
+    font-family: TINY;
+    text-align: center;
+}
+
+.column1-index{
+    grid-area: column1;
+    margin-left: 20px;
+}
+
+.column2-index{
+    grid-area: column2;
+    margin-left: 20px;
+}
+
+.tiendascolumn{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "imgcolumn txtcolumn";
+}
+
+.imgcolumn{
+    width: 95%;
+    grid-area: imgcolumn;
+}
+
+.divh-column{
+    grid-area: txtcolumn;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
