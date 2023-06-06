@@ -14,7 +14,7 @@ header{
     height: 80px;
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 10% 40% 25% 25%;
     grid-template-areas: 
     "img search btn sesion";
 }
@@ -64,10 +64,13 @@ header{
     width: 35px;
 }
 
-.search-box-header{
+.searchheader{
     grid-area: search;
     align-self: center;
+}
 
+.inputheader{
+    width: 500px;
 }
 
 .imglupa-header{
@@ -168,15 +171,40 @@ header{
 
 }
 
+footer{
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+    "acerca ayuda redes cuenta";
+}
 
+.acercafooter{
+    grid-area: acerca;
+    
+}
 
+.ayudafooter{
+    grid-area: ayuda;
+}
 
+.redesfooter{
+    grid-area: redes;
+}
 
+.cuentafooter{
+    grid-area: cuenta;
+}
 
+.enlacesfooter{
+    display: block;
+}
 
-
-
-
+li::marker{
+    color: rgba(255, 255, 255, 0);  /* ELIMINAR ESTO (son los puntitos alado de las palabras) */
+}
 
 
 
