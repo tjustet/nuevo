@@ -14,7 +14,7 @@ header{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-areas: 
-    "img busqueda btn sesion";
+    "img search btn sesion";
 }
 
 .logo-header{
@@ -30,8 +30,7 @@ header{
 .carrito-header{
     height: 60px;
     width: auto;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 25px;
 }
 
 .btn-box-header{
@@ -54,22 +53,36 @@ header{
 }
 
 .btnimg-header{
-    height: 10%;
-    
-
-    overflow: hidden;
+    height: 75%;
+    width: 150px;
 }
 
 .imgsesion-header{
+    height: 35px;
+    width: 35px;
+}
 
+.search-box-header{
+    grid-area: search;
+    align-self: center;
 
 }
 
+.imglupa-header{
+    height: 20px;
+    width: 20px;
+}
+
+.main-index{
+    height: 500px;
+    width: 90%;
 
 
+}
+/* MODIFICAR LAS IMAGENES QUE SE ENCUENTRAN DENTRO DEL CARRUSEL PARA QUE NO SE SALGAN */
+.carrusel-div{
 
-
-
+}
 
 
 

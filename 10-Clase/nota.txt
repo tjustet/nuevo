@@ -15,6 +15,8 @@ git: sistema de control de versiones gratuito y de codigo abierto
     git init para que se cree una nube git
     git status
     git add git . (para todo) para pasar de working directory a staging area
+    git commit -m "comentario"
+    git log sale los commit que se hicieron junto con los datos fecha y hora del autpr y su comentario
 
 
 3 estados de git
@@ -22,14 +24,9 @@ git: sistema de control de versiones gratuito y de codigo abierto
     staging area (es cuando ya estamos "confirmando" nuestra version)
     repository (es cuando lo subimos a la nube)
 
-
-
-que es un repositorio
-
-
-
 ramas
-
+    son distintas versiones de nuestro proyecto ej: en navidad se ponen decoraciones navideñas y despues se puede volver al punto inicial
+    
 
 
 
