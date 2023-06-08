@@ -4,22 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <a href="../index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
+<body class="body-compras">
+  <!-- header menu -->
+  <header>
+    <div class="img-header">
+        <a href="index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
+    </div>
+    <div class="btn-group btn-box-header">
+      <button type="button" class="btn btn-danger dropdown-toggle btn-header button-header" data-bs-toggle="dropdown" aria-expanded="false">Categoria</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../pages/categorias/Comida.html">Restaurantes</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Servicios.html">Supermercado</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Tecnología.html">Tecnología</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/HogaryMuebles.html">Hogar y Muebles</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Herramientas.html">Herramientas</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Construcción.html">Construcción</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/DeportesyFitness.html">Deportes y Fitness</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/AccesoriosparaVehículos.html">Accesorios para Vehículos</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Moda.html">Moda</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/JuegosyJuguetes.html">Juegos y Juguetes</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/BellezayCuidadoPersonal.html">Belleza y Cuidado Personal</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/CrinicaMedica.html">Crinica Medica</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Agro.html">Agronomia</a></li>
+        <li><a class="dropdown-item" href="../pages/categorias/Servicios.html">Servicios</a></li>
+      </ul>
+      <button type="button" class="btn btn-danger btn-header button-header" href="../pages/compras.html">Compras</button>
+      <button type="button" class="btn btn-danger btn-header button-header" href="../pages/vender.html">Vender</button>
+    </div>
 
-        <a href="./categorias.html">Categorias</a>
-        <a href="./compras.html">Compras</a>
-        <a href="./vender.html">Vender</a>
-        <a href="./carrito.html"><img class="carrito-header" src="../iconos/CarritoDeCompras.png" alt="Carrito"></a>
-        <a href="./crearcuenta.html">Crear cuenta</a>
-        <a href="./iniciarsesion.html">Inicias Sesión</a>
-    </header>    
+    <div class="searchheader">
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control inputheader" placeholder="Buscar" ><!-- placeholder agrega en el input un texto (sacado de mercadolibre) -->
+        </div>
+        <button type="button" class="btn btn-primary button-header">
+          <img class="imglupa-header" src="../iconos/lupa.png">
+        </button>
+        </div>
+    </div>
+
+    <div class="sesion-box-header">
+      <a href="../pages/carrito.html"><img class="carrito-header" src="../iconos/CarritoDeCompras.png" alt="Carrito"></a>
+      <button type="button" class="btn btn-danger btnimg-header button-header" data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="imgsesion-header" src="../iconos/boton-de-cuenta-redonda-con-usuario-dentro.png" alt="Logo"></button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../pages/login.html">Inicias Sesión</a></li>
+        <li><a class="dropdown-item" href="../pages/crearcuenta.html">Crear cuenta</a></li>
+      </ul>
+    </div>
+  </header>    
 
 
 
+  <footer>
+    <div class="acercafooter">
+      <h3>Hacerca de:</h3>
+      <ul>
+        <li><a class="enlaces" href="">Nosotros</a></li>
+        <li><a class="enlaces" href="">Función</a></li>
+      </ul>
+    </div>
+    <div class="ayudafooter">
+      <h3>Ayuda:</h3>
+      <ul>
+        <li><a class="enlaces" href="">Pagina</a></li>
+        <li><a class="enlaces" href="">Conflictos</a></li>
+      </ul>
+    </div>
+    <div class="redesfooter">
+      <h3>Redes Sociales:</h3>
+      <ul>
+        <li><a class="enlaces" href="">Facebook</a></li>
+        <li><a class="enlaces" href="">Instagram</a></li>
+        <li><a class="enlaces" href="">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="cuentafooter">
+      <h3>Mi Cuenta:</h3>
+      <ul>
+        <li><a class="enlaces" href="">Resumen</a></li>
+        <li><a class="enlaces" href="">Favoritos</a></li>
+        <li><a class="enlaces" href="">Tienda</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
