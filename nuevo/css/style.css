@@ -24,7 +24,7 @@ body{
 
 header{
     background-color: #f8ecd4;
-    height: 80px;
+    height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 10% 40% 25% 25%;
@@ -33,14 +33,16 @@ header{
 }
 
 .logo-header{
-    height: 60px;
+    height: 73%;
     width: auto;
     margin: 10px 10px;
 }
 
 .img-header{
     grid-area: img;
+    height: 70px;
 }
+
 
 .carrito-header{
     height: 60px;
@@ -78,12 +80,13 @@ header{
 }
 
 .searchheader{
+    margin-left: 50px;
     grid-area: search;
     align-self: center;
 }
 
 .inputheader{
-    width: 500px;
+    width: 300px;
 }
 
 .imglupa-header{
@@ -96,6 +99,20 @@ header{
     border-color: rgba(255, 255, 255, 0);
     color: #230b00;
 }
+
+.buttonsearch-header{
+    background-color: #aabe9b;
+    border-color: rgba(255, 255, 255, 0);
+    color: #230b00;
+}
+
+.buttonsesion-header{
+    background-color: #aabe9b;
+    border-color: rgba(255, 255, 255, 0);
+    color: #230b00;
+}
+
+
 
 /* carrusel index */
 .main-index{
@@ -138,6 +155,10 @@ header{
     color: #a29d7f;
     font-size: 75px;
     font-family: TINY;
+}
+
+.map-index{
+    width: 90%;
 }
 
 /* tiendas */
@@ -361,8 +382,197 @@ li::marker{
     width: 400px;
 }
 
+.productoscomprados{
+    background-color: #a29d7f;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "tittleproductos"
+    "caracteristicascompra";
+    margin-bottom: 40px;
+}
+
+.h2productoscomprados{
+    grid-area: tittleproductos;
+}
+
+.boxdatos{
+    grid-area: caracteristicascompra;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+    "imgcompra caracteristicas vendedor";
+}
+
+.imgproducto{
+    grid-area: imgcompra;
+    height: 60%;
+    margin: 10px 0px 0px 10px;
+}
+
+.caracteristicasproducto{
+    grid-area: caracteristicas;
+}
+
+.datosvendedor{
+    grid-area: vendedor;
+}
 
 
 
+
+
+
+
+
+
+
+
+/* tablet */
+@media (max-width: 768px){
+    .inputheader{
+        width: 100px;
+    }
+
+    .carrito-header{
+        height: 50px;
+    }
+
+    .button-header{
+        font-size: 10px;
+        height: 30%;
+        width: 90%;
+    }
+
+    .buttonsesion-header{
+        width: 61px;
+        height: 49px;
+    }
+
+    .btn-box-header{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .buttonsearch-header{
+        height: 40px;
+        width: 30px;
+    }
+
+    .imglupa-header{
+        height: 12px;
+        width: 12px;   
+    }
+
+    .h4sectiontiendas{
+        font-size: 15px;
+    }
+
+    .h3sectiontiendas{
+        font-size: 20px;
+    }
+
+    .imgproducto{
+        height: 40px;
+    }
+
+}
+
+/* mobil */
+@media (max-width: 425px){
+    .inputheader{
+        width: 90px;
+    }
+
+    .logo-header{
+        height: 30px;
+    }
+
+    .carrito-header{
+        height: 30px;
+    }
+
+    .button-header{
+        font-size: 10px;
+        height: 30%;
+        width: 90%;
+    }
+
+    .buttonsesion-header{
+        width: 61px;
+        height: 49px;
+    }
+
+    .carrito-header{
+        margin-right: 0px;
+    }
+
+    .carruselmain-index{
+        height: 200px;
+    }
+
+    .imgcarrusel-index{
+        height: 200px;
+    }
+
+    .sectionh2-index{
+        font-size: 60px;
+    }
+
+    .navh2-index{
+        font-size: 60px;
+    }
+
+    .sectiontiendas-index{
+        grid-template-columns: 100%;
+        grid-template-rows: 75px auto auto;
+        grid-template-areas: 
+        "tittle"
+        "colum1"
+        "colum2";
+    }
+
+    .column1-index{
+        grid-area: colum1;
+    }
+
+    .column2-index{
+        grid-area: colum2;
+    }
+
+    .h3sectiontiendas{
+        font-size: 15px;
+    }
+
+    .enlaces{
+        font-size: 10px;
+    }
+
+    .imgproducto{
+        height: 20px;
+    }
+
+    .h2productoscomprados{
+        font-size: 25px;
+    }
+
+    .h3productoscomprados{
+        font-size: 20px;
+    }
+
+    .h4productoscomprados{
+        font-size: 15px;
+    }
+
+    .h3datosvendedor{
+        font-size: 13px;
+    }
+
+    .btnselect-compras{
+        height: 40px;
+        width: 90px;
+    }
+
+}
 
 

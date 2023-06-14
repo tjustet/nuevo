@@ -13,9 +13,11 @@
   <!-- header menu -->
   <header>
     <div class="img-header">
-        <a href="index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
+        <a href="../index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
     </div>
     <div class="btn-group btn-box-header">
+      <a type="button" class="btn btn-danger btn-header button-header" href="../pages/compras.html">Compras</a>
+      <a type="button" class="btn btn-danger btn-header button-header" href="../pages/vender.html">Vender</a>
       <button type="button" class="btn btn-danger dropdown-toggle btn-header button-header" data-bs-toggle="dropdown" aria-expanded="false">Categoria</button>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="../pages/categorias/Comida.html">Restaurantes</a></li>
@@ -33,8 +35,6 @@
         <li><a class="dropdown-item" href="../pages/categorias/Agro.html">Agronomia</a></li>
         <li><a class="dropdown-item" href="../pages/categorias/Servicios.html">Servicios</a></li>
       </ul>
-      <button type="button" class="btn btn-danger btn-header button-header" href="../pages/compras.html">Compras</button>
-      <button type="button" class="btn btn-danger btn-header button-header" href="../pages/vender.html">Vender</button>
     </div>
 
     <div class="searchheader">
@@ -42,7 +42,7 @@
         <div class="form-outline">
           <input type="search" id="form1" class="form-control inputheader" placeholder="Buscar" ><!-- placeholder agrega en el input un texto (sacado de mercadolibre) -->
         </div>
-        <button type="button" class="btn btn-primary button-header">
+        <button type="button" class="btn btn-primary buttonsearch-header">
           <img class="imglupa-header" src="../iconos/lupa.png">
         </button>
         </div>
@@ -50,7 +50,7 @@
 
     <div class="sesion-box-header">
       <a href="../pages/carrito.html"><img class="carrito-header" src="../iconos/CarritoDeCompras.png" alt="Carrito"></a>
-      <button type="button" class="btn btn-danger btnimg-header button-header" data-bs-toggle="dropdown" aria-expanded="false">
+      <button type="button" class="btn btn-danger btnimg-header buttonsesion-header" data-bs-toggle="dropdown" aria-expanded="false" >
         <img class="imgsesion-header" src="../iconos/boton-de-cuenta-redonda-con-usuario-dentro.png" alt="Logo"></button>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="../pages/login.html">Inicias Sesión</a></li>
@@ -61,19 +61,19 @@
 
   <section class="section-compras">
     <div>
-      <h1>Compras</h1>
+      <h1 style="color:#d4cfa5">Compras</h1>
 
       <div class="searchsection-compras">
         <div class="input-group">
           <div class="form-outline">
-            <input type="search" id="form1" class="form-control inputsection-compras" placeholder="Buscar" >
+            <input type="search" id="form1" class="form-control inputheader" placeholder="Buscar" >
           </div>
-          <button type="button" class="btn btn-primary button-header">
+          <button type="button" class="btn btn-primary buttonsearch-header">
             <img class="imglupa-header" src="../iconos/lupa.png">
           </button>
             <div>
-              <label for="text">Año de compra</label>
-              <select type="text">
+              <label style="color:#d4cfa5; margin: 0px 10px 0px 10px" for="text">Año de compra</label>
+              <select type="button" class="btn btn-danger dropdown-toggle button-header btnselect-compras" data-bs-toggle="dropdown" aria-expanded="false">
                   <option class="color">Todos</option>
                   <option class="color">2023</option>
                   <option class="color">2022</option>
@@ -88,28 +88,84 @@
   </section>
 
   <section>
-    <div>
-      
+    <div class="productoscomprados">
+      <h2 class="h2productoscomprados" style="color:#d4cfa5">fecha de la compra: </h2>
+      <div class="boxdatos">
+        <img class="imgproducto" src="../img/images.png" alt="producto comprado">
+        <div class="caracteristicasproducto">
+          <h3 class="h3productoscomprados" style="color:#d4cfa5">Dia de retiro</h3>
+          <h4 class="h4productoscomprados" style="color:#d4cfa5">datos del producto</h4>
+        </div>
+        <h3 class="h3datosvendedor" style="color:#d4cfa5">datos del vendedor</h3>
+      </div>
+    </div>
+
+    <div class="productoscomprados">
+      <h2 class="h2productoscomprados" style="color:#d4cfa5">fecha de la compra: </h2>
+      <div class="boxdatos">
+        <img class="imgproducto" src="../img/images.png" alt="producto comprado">
+        <div class="caracteristicasproducto">
+          <h3 class="h3productoscomprados" style="color:#d4cfa5">Dia de retiro</h3>
+          <h4 class="h4productoscomprados" style="color:#d4cfa5">datos del producto</h4>
+        </div>
+        <h3 class="h3datosvendedor" style="color:#d4cfa5">datos del vendedor</h3>
+      </div>
+    </div>
+
+    <div class="productoscomprados">
+      <h2 class="h2productoscomprados" style="color:#d4cfa5">fecha de la compra: </h2>
+      <div class="boxdatos">
+        <img class="imgproducto" src="../img/images.png" alt="producto comprado">
+        <div class="caracteristicasproducto">
+          <h3 class="h3productoscomprados" style="color:#d4cfa5">Dia de retiro</h3>
+          <h4 class="h4productoscomprados" style="color:#d4cfa5">datos del producto</h4>
+        </div>
+        <h3 class="h3datosvendedor" style="color:#d4cfa5">datos del vendedor</h3>
+      </div>
+    </div>
+
+    <div class="productoscomprados">
+      <h2 class="h2productoscomprados" style="color:#d4cfa5">fecha de la compra: </h2>
+      <div class="boxdatos">
+        <img class="imgproducto" src="../img/images.png" alt="producto comprado">
+        <div class="caracteristicasproducto">
+          <h3 class="h3productoscomprados" style="color:#d4cfa5">Dia de retiro</h3>
+          <h4 class="h4productoscomprados" style="color:#d4cfa5">datos del producto</h4>
+        </div>
+        <h3 class="h3datosvendedor" style="color:#d4cfa5">datos del vendedor</h3>
+      </div>
+    </div>
+
+    <div class="productoscomprados">
+      <h2 class="h2productoscomprados" style="color:#d4cfa5">fecha de la compra: </h2>
+      <div class="boxdatos">
+        <img class="imgproducto" src="../img/images.png" alt="producto comprado">
+        <div class="caracteristicasproducto">
+          <h3 class="h3productoscomprados" style="color:#d4cfa5">Dia de retiro</h3>
+          <h4 class="h4productoscomprados" style="color:#d4cfa5">datos del producto</h4>
+        </div>
+        <h3 class="h3datosvendedor" style="color:#d4cfa5">datos del vendedor</h3>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="acercafooter">
-      <h3>Hacerca de:</h3>
+      <h3 class="h3sectiontiendas">Hacerca de:</h3>
       <ul>
         <li><a class="enlaces" href="">Nosotros</a></li>
         <li><a class="enlaces" href="">Función</a></li>
       </ul>
     </div>
     <div class="ayudafooter">
-      <h3>Ayuda:</h3>
+      <h3 class="h3sectiontiendas">Ayuda:</h3>
       <ul>
         <li><a class="enlaces" href="">Pagina</a></li>
         <li><a class="enlaces" href="">Conflictos</a></li>
       </ul>
     </div>
     <div class="redesfooter">
-      <h3>Redes Sociales:</h3>
+      <h3 class="h3sectiontiendas">Redes Sociales:</h3>
       <ul>
         <li><a class="enlaces" href="">Facebook</a></li>
         <li><a class="enlaces" href="">Instagram</a></li>
@@ -117,7 +173,7 @@
       </ul>
     </div>
     <div class="cuentafooter">
-      <h3>Mi Cuenta:</h3>
+      <h3 class="h3sectiontiendas">Mi Cuenta:</h3>
       <ul>
         <li><a class="enlaces" href="">Resumen</a></li>
         <li><a class="enlaces" href="">Favoritos</a></li>
