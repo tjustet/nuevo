@@ -1,0 +1,678 @@
+$fondo: #230b00 ;
+$bloques: #a29d7f ;
+$letras: #d4cfa5 ;
+$footeryheader: #f8ecd4 ;
+$botones: #aabe9b ;
+
+h1, h2, h3, h4, h5, h6{
+    color: $letras;
+    font-family: TINY;
+}
+
+.titulo{
+    margin: 10px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: $fondo;
+}
+
+/* encabezado */
+
+header{
+    background-color: $footeryheader;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 40% 25% 25%;
+    grid-template-areas: 
+    "img search btn sesion";
+}
+
+.logo-header{
+    height: 73%;
+    width: auto;
+    margin: 10px 10px;
+}
+
+.img-header{
+    grid-area: img;
+    height: 70px;
+}
+
+
+.carrito-header{
+    height: 60px;
+    width: auto;
+    margin-right: 25px;
+}
+
+.btn-box-header{
+    grid-area: btn;
+    align-items: center;
+}
+
+.btn-header{
+    margin: 0 1.5% 0 1.5%;
+    height: 50%;
+
+}
+
+.sesion-box-header{
+    grid-area: sesion;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.btnimg-header{
+    height: 75%;
+    width: 150px;
+}
+
+.imgsesion-header{
+    height: 35px;
+    width: 35px;
+}
+
+.searchheader{
+    margin-left: 50px;
+    grid-area: search;
+    align-self: center;
+}
+
+.inputheader{
+    width: 300px;
+}
+
+.imglupa-header{
+    height: 20px;
+    width: 20px;
+}
+
+.button-header{
+    background-color: $botones;
+    border-color: rgba(255, 255, 255, 0);
+    color: $fondo;
+    transition: all 2s;
+}
+
+.button-header:hover{
+    color: $fondo;
+    background: radial-gradient($botones, $bloques);
+    border-color: rgba(255, 255, 255, 0);
+    transform: translate(1px, 1px); 
+    
+}
+
+.buttonsearch-header{
+    background-color: $botones;
+    border-color: rgba(255, 255, 255, 0);
+    color: $fondo;
+}
+
+.buttonsesion-header{
+    background-color: $botones;
+    border-color: rgba(255, 255, 255, 0);
+    color: $fondo;
+}
+
+
+
+/* carrusel index */
+.main-index{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+/* MODIFICAR LAS IMAGENES QUE SE ENCUENTRAN DENTRO DEL CARRUSEL PARA QUE NO SE SALGAN */
+.carruselmain-index{
+    height: 500px;
+    width: 75%
+    
+}
+
+.imgcarrusel-index{
+    height: 500px;
+
+}
+
+.boton-carrusel{
+    width: 70px;
+}
+
+/* mapa */
+
+.sectionmap-index{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.sectionh2-index{
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+    color: $bloques;
+    font-size: 75px;
+    font-family: TINY;
+}
+
+.map-index{
+    width: 90%;
+}
+
+/* tiendas */
+.sectiontiendas-index{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 25px;
+    grid-template-rows: 75px auto;
+    grid-template-areas: 
+    "tittle tittle"
+    "column1 column2";
+}
+
+.navh2-index{
+    grid-area: tittle;
+    color: $bloques;
+    font-size: 75px;
+    font-family: TINY;
+    text-align: center;
+}
+
+.column1-index{
+    grid-area: column1;
+    margin-left: 20px;
+}
+
+.column2-index{
+    grid-area: column2;
+    margin-left: 20px;
+}
+
+.tiendascolumn{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "imgcolumn txtcolumn";
+}
+
+.imgcolumn{
+    width: 95%;
+    grid-area: imgcolumn;
+}
+
+.divh-column{
+    grid-area: txtcolumn;
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: $footeryheader;
+    height: 125px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: 
+    "acerca ayuda redes cuenta";
+}
+
+.acercafooter{
+    grid-area: acerca;
+    
+}
+
+.ayudafooter{
+    grid-area: ayuda;
+}
+
+.redesfooter{
+    grid-area: redes;
+}
+
+.cuentafooter{
+    grid-area: cuenta;
+}
+
+.enlacesfooter{
+    display: block;
+}
+
+li::marker{
+    color: rgba(255, 255, 255, 0);  /* ELIMINAR ESTO (son los puntitos alado de las palabras) */
+}
+
+
+/* LOGIN */
+
+.body-login{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.div-login{
+    width: 320px;
+    height: auto;
+    background-color: $footeryheader;
+    color: #8d0000;
+    padding: 75px 50px 40px 50px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-login{
+    background-color: $footeryheader;
+    border-radius: 100%;
+    transform: translateY(-109%);
+    position: absolute;
+}
+
+.h1-login{
+    margin: 10px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.label-login{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.input-login{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-login{
+    width: 100px;
+    height: 50px;
+    background-color: $botones;
+    border-color: rgba(255, 255, 255, 0);
+    color: $fondo;
+    font-size: 25px;
+    border-radius: 15%;
+}
+
+
+/* CREAR CUENTA CC */
+
+.body-cc{
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+}
+
+.div-cc{
+    width: 320px;
+    height: auto;
+    background-color: $footeryheader;
+    color: #8d0000;
+    padding: 75px 50px 40px 50px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-cc{
+    background-color: $footeryheader;
+    border-radius: 100%;
+    transform: translateY(-109%);
+    position: absolute;
+}
+
+.h1-cc{
+    margin: 10px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.label-cc{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.input-cc{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-cc{
+    width: 100px;
+    background-color: $botones;
+    border-color: rgba(255, 255, 255, 0);
+    color: $fondo;
+    font-size: 25px;
+    border-radius: 15%;
+}
+
+
+/* Compras */
+
+.section-compras{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.searchsection-compras{
+    padding: 30px 0px 75px 0px;
+}
+
+.inputsection-compras{
+    width: 400px;
+}
+
+.productoscomprados{
+    background-color: $bloques;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "tittleproductos"
+    "caracteristicascompra";
+    margin-bottom: 40px;
+}
+
+.h2productoscomprados{
+    grid-area: tittleproductos;
+}
+
+.boxdatos{
+    grid-area: caracteristicascompra;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+    "imgcompra caracteristicas vendedor";
+}
+
+.imgproducto{
+    grid-area: imgcompra;
+    height: 60%;
+    margin: 10px 0px 0px 10px;
+}
+
+.caracteristicasproducto{
+    grid-area: caracteristicas;
+}
+
+.datosvendedor{
+    grid-area: vendedor;
+}
+
+/* comida/restaurantes */
+
+.divcarrusel-comida{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgcarrusel-comida{
+    height: 250px;
+    width: 250px;
+}
+
+.h2carrusel-comida{
+    font-size: 190%;
+}
+
+.h5carrusel-comida{
+    width: 250px;
+}
+
+/* burguerking */
+
+.imgcarrusel-burguerking{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-restaurantes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "colum1 colum2";
+}
+
+.column1-restaurantes{
+    grid-area: colum1;
+    
+}
+
+.column2-restaurantes{
+    grid-area: colum2;
+}
+
+.comidasmenu-restaurantes{
+    background-color: $bloques;
+    margin: 10px 10px 15px 0px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-areas: 
+    "img txt btn";
+    
+}
+
+.imgmenu-restaurantes{
+    height: 175px;
+    width: 175px;
+    grid-area: img;
+}
+
+.txtmenu-restaurantes{
+    grid-area: txt;
+}
+
+.btnmenu-restaurante{
+    margin: 10%;
+    width: auto;
+    height: 40px;
+    background-color: #8d0000;
+    color: white;
+}
+
+.h3menu-restaurantes{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* tablet */
+@media (max-width: 768px){
+    .inputheader{
+        width: 100px;
+    }
+
+    .carrito-header{
+        height: 50px;
+    }
+
+    .button-header{
+        font-size: 10px;
+        height: 30%;
+        width: 90%;
+    }
+
+    .buttonsesion-header{
+        width: 61px;
+        height: 49px;
+    }
+
+    .btn-box-header{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .buttonsearch-header{
+        height: 40px;
+        width: 30px;
+    }
+
+    .imglupa-header{
+        height: 12px;
+        width: 12px;   
+    }
+
+    .h4sectiontiendas{
+        font-size: 15px;
+    }
+
+    .h3sectiontiendas{
+        font-size: 20px;
+    }
+
+    .imgproducto{
+        height: 40px;
+    }
+
+}
+
+/* mobil */
+@media (max-width: 425px){
+    .inputheader{
+        width: 90px;
+    }
+
+    .logo-header{
+        height: 30px;
+    }
+
+    .carrito-header{
+        height: 30px;
+    }
+
+    .button-header{
+        font-size: 10px;
+        height: 30%;
+        width: 90%;
+    }
+
+    .buttonsesion-header{
+        width: 61px;
+        height: 49px;
+    }
+
+    .carrito-header{
+        margin-right: 0px;
+    }
+
+    .carruselmain-index{
+        height: 200px;
+    }
+
+    .imgcarrusel-index{
+        height: 200px;
+    }
+
+    .sectionh2-index{
+        font-size: 60px;
+    }
+
+    .navh2-index{
+        font-size: 60px;
+    }
+
+    .sectiontiendas-index{
+        grid-template-columns: 100%;
+        grid-template-rows: 75px auto auto;
+        grid-template-areas: 
+        "tittle"
+        "colum1"
+        "colum2";
+    }
+
+    .column1-index{
+        grid-area: colum1;
+    }
+
+    .column2-index{
+        grid-area: colum2;
+    }
+
+    .h3sectiontiendas{
+        font-size: 15px;
+    }
+
+    .enlaces{
+        font-size: 10px;
+    }
+
+    .imgproducto{
+        height: 20px;
+    }
+
+    .h2productoscomprados{
+        font-size: 25px;
+    }
+
+    .h3productoscomprados{
+        font-size: 20px;
+    }
+
+    .h4productoscomprados{
+        font-size: 15px;
+    }
+
+    .h3datosvendedor{
+        font-size: 13px;
+    }
+
+    .btnselect-compras{
+        height: 40px;
+        width: 90px;
+        
+    }
+
+}
+
+
+
+
+
+
+
+

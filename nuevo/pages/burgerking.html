@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="img-header">
+        <a href="../index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
+    </div>
+    <div class="btn-group btn-box-header">
+      <a type="button" class="btn btn-danger btn-header button-header" href="../pages/compras.html">Compras</a>
+      <a type="button" class="btn btn-danger btn-header button-header" href="../pages/Comida.html">Restaurantes</a>
+      <button type="button" class="btn btn-danger dropdown-toggle btn-header button-header" data-bs-toggle="dropdown" aria-expanded="false">Estrellas</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./burgerking.html">Burgerking</a></li>
+      </ul>
+    </div>
+
+    <div class="searchheader">
+      <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control inputheader" placeholder="Buscar" ><!-- placeholder agrega en el input un texto (sacado de mercadolibre) -->
+        </div>
+        <button type="button" class="btn btn-primary buttonsearch-header">
+          <img class="imglupa-header" src="../iconos/lupa.png">
+        </button>
+        </div>
+    </div>
+
+    <div class="sesion-box-header">
+      <a href="../pages/carrito.html" class="position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2<span class="visually-hidden"></span>
+        </span>
+        <img class="carrito-header" src="../iconos/CarritoDeCompras.png" alt="Carrito"></a>
+      <button type="button" class="btn btn-danger btnimg-header buttonsesion-header" data-bs-toggle="dropdown" aria-expanded="false" >
+        <img class="imgsesion-header" src="../iconos/boton-de-cuenta-redonda-con-usuario-dentro.png" alt="Logo"></button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../pages/login.html">Inicias Sesión</a></li>
+        <li><a class="dropdown-item" href="../pages/crearcuenta.html">Crear cuenta</a></li>
+      </ul>
+    </div>
+  </header>    
+  <h1 class="titulo">Burguerking</h1>
+  <main class="main-index">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carruselmain-index" data-bs-ride="carousel" style="background-color: rgba(140, 0, 0, 0.569);">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#stacker-quintuple">
+            <img src="../img/burgerking/stacker-quintuple.png" class="d-block w-100 imgcarrusel-burguerking" alt="comida">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: black;">Stacker quintuple</h5>
+              <p>Veni a probar la nueva hamburguesa mas grandes que las anteriores</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#CHEESEONIONDOBLE">
+            <img src="../img/burgerking/CHEESEONIONDOBLE.png" class="d-block w-100 imgcarrusel-burguerking" alt="Agronomia">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: black;">Cheese Onion Doble</h5>
+              <p>Pan, doble carne a la parrilla, salsa cheddar y cebolla salteada</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="#Stacker-XL-Triple">
+            <img src="../img/burgerking/Stacker XL Triple.png" class="d-block w-100 imgcarrusel-index" alt="Moda">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stacker XL Triple</h5>
+              <p>Tres carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev boton-carrusel" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next boton-carrusel" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+<h2 class="titulo">MENU</h2>
+
+<section class="menu-restaurantes">
+  <div class="column1-restaurantes">
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Stacker-con-bastones-de-muzzarella.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker con bastones de muzzarella</h2>
+        <h3 class="h3menu-restaurantes">Deliciosa carne a la parrilla, panceta, queso cheddar, bastones de muzzarella, y salsa stacker</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img id="CHEESEONIONDOBLE" class="imgmenu-restaurantes" src="../img/burgerking/CHEESEONIONDOBLE.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Cheese Onion Doble</h2>
+        <h3 class="h3menu-restaurantes">Pan, doble carne a la parrilla, salsa cheddar y cebolla salteada</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Stacker-Doble.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker Doble</h2>
+        <h3 class="h3menu-restaurantes">2 carnes a la parri, salsa stacker, pan, queso cheddar, panceta. Tranki pero potente.</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Stacker-Cuadruple.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker Cuadruple</h2>
+        <h3 class="h3menu-restaurantes">4 carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta. Se siente esa manija</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Provo King Doble Carne.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Provo King Doble Carne</h2>
+        <h3 class="h3menu-restaurantes">Pan de masa madre con harina de centeno, mayonesa, mix de lechugas, cebolla, alioli de albahaca, tomates secos hidratados en aceite, queso provolone, carne a la parri, queso provolone, carne a la parri</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+  </div>
+  <div class="column2-restaurantes">
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Whopper-Guacamole.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Whopper Guacamole</h2>
+        <h3 class="h3menu-restaurantes">Pan, carne a la parrilla, lechuga, tomate, cebolla, pepino, mayonesa y guacamole</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Doble Cuarto XL.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Doble Cuarto XL</h2>
+        <h3 class="h3menu-restaurantes">Dos carnes a la parrilla, pan, queso cheddar, cebolla, mostaza y ketchup</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img class="imgmenu-restaurantes" src="../img/burgerking/Stacker-Triple.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker Triple</h2>
+        <h3 class="h3menu-restaurantes">3 carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta. Muy potente.</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img id="stacker-quintuple" class="imgmenu-restaurantes" src="../img/burgerking/stacker-quintuple.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker Quintuple</h2>
+        <h3 class="h3menu-restaurantes">5 carnes a la parri, salsa stacker, pan, queso cheddar, panceta. Solo para expertos</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+    <div class="comidasmenu-restaurantes">
+      <img id="Stacker-XL-Triple" class="imgmenu-restaurantes" src="../img/burgerking/Stacker XL Triple.png" alt="Stacker con bastones de muzzarella">
+      <div class="txtmenu-restaurantes">
+        <h2 class="h2menu-restaurantes">Stacker XL Triple</h2>
+        <h3 class="h3menu-restaurantes">Tres carnes a la parrilla, salsa stacker, pan, queso cheddar, panceta</h3>
+        <h3 class="h3menu-restaurantes">precio</h3>
+      </div>
+      <button class="btnmenu-restaurante">Comprar</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+      <footer>
+        <div class="acercafooter">
+          <h3 class="h3sectiontiendas">Hacerca de:</h3>
+          <ul>
+            <li><a class="enlaces" href="">Nosotros</a></li>
+            <li><a class="enlaces" href="">Función</a></li>
+          </ul>
+        </div>
+        <div class="ayudafooter">
+          <h3 class="h3sectiontiendas">Ayuda:</h3>
+          <ul>
+            <li><a class="enlaces" href="">Pagina</a></li>
+            <li><a class="enlaces" href="">Conflictos</a></li>
+          </ul>
+        </div>
+        <div class="redesfooter">
+          <h3 class="h3sectiontiendas">Redes Sociales:</h3>
+          <ul>
+            <li><a class="enlaces" href="">Facebook</a></li>
+            <li><a class="enlaces" href="">Instagram</a></li>
+            <li><a class="enlaces" href="">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="cuentafooter">
+          <h3 class="h3sectiontiendas">Mi Cuenta:</h3>
+          <ul>
+            <li><a class="enlaces" href="">Resumen</a></li>
+            <li><a class="enlaces" href="">Favoritos</a></li>
+            <li><a class="enlaces" href="">Tienda</a></li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>
