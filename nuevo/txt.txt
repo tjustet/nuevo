@@ -17,11 +17,12 @@ DOS PAGINAS ADAPTADAS A MOBIL Y TABLET MINIMO
 Y ENTREGAR EN UN REPOSITORIO DE GITHUB
 
 BOOTSTRAP AGREGAR:
+ALERTAS - PROGRESO
 ACORDION
-INSIGNIA
 offcanvas
 TOSTADAS
 
+HASTA 375PX DE MOBIL
 
 https://www.google.com/business/
 https://search.google.com/search-console/welcome?hl=es

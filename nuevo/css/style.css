@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: TINY;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 .titulo {
   margin: 10px;
   padding: 0 0 20px;
@@ -47,7 +51,7 @@ header {
 .carrito-header {
   height: 60px;
   width: auto;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .btn-box-header {
@@ -116,6 +120,7 @@ header {
   background-color: #aabe9b;
   border-color: rgba(255, 255, 255, 0);
   color: #230b00;
+  margin-left: 15px;
 }
 
 /* carrusel index */
@@ -192,6 +197,7 @@ header {
 }
 
 .tiendascolumn {
+  background-color: #a29d7f;
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -200,12 +206,29 @@ header {
 }
 
 .imgcolumn {
+  height: 225px;
   width: 95%;
   grid-area: imgcolumn;
 }
 
 .divh-column {
   grid-area: txtcolumn;
+}
+
+.button-tiendas {
+  height: 30px;
+  width: 100px;
+  background-color: #aabe9b;
+  border-color: rgba(255, 255, 255, 0);
+  color: #230b00;
+  text-align: center;
+  transition: all 2s;
+}
+
+.button-tiendas:hover {
+  background: radial-gradient(#aabe9b, #a29d7f);
+  border-color: rgba(255, 255, 255, 0);
+  transform: translate(1px, 1px);
 }
 
 /* FOOTER */
@@ -425,11 +448,12 @@ li::marker {
   width: 250px;
 }
 
-/* burguerking */
-.imgcarrusel-burguerking {
-  height: 500px;
-  display: flex;
-  justify-content: center;
+/* restaurantes */
+.imgcarrusel-restaurantes {
+  height: 100%;
+  width: 50% !important;
+  margin-left: 25%;
+  margin-top: 1%;
 }
 
 .menu-restaurantes {
@@ -475,6 +499,90 @@ li::marker {
 
 .h3menu-restaurantes {
   font-size: 20px;
+}
+
+.checkbox-restaurantes {
+  margin-left: 25%;
+  height: 40%;
+  width: 40%;
+  accent-color: #230b00;
+}
+
+.compra-restaurantes {
+  margin: 100px 5% 100px 5%;
+  width: 90%;
+  height: 500px;
+  background-color: #a29d7f;
+  display: flex;
+  justify-content: center;
+}
+
+.divimgcompra-restaurantes {
+  background-color: #a29d7f;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  transform: translateY(-60%);
+  position: absolute;
+  text-align: center;
+}
+
+.imgcompra-restaurantes {
+  width: 20%;
+}
+
+.menucompra-restaurantes {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 10%;
+  grid-template-areas: "dire pago datprins";
+}
+
+.direccioncompra-restaurantes {
+  grid-area: dire;
+  text-align: center;
+}
+
+.labelcompra-restaurantes {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+  font-size: 125%;
+}
+
+.inputcompra-restaurantes {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.pagocompra-restaurantes {
+  margin-top: 20%;
+  grid-area: pago;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "txtprecio precio" "txtmetodo metodo" "txtcomen comentario";
+}
+
+.txtprecio {
+  grid-area: txtprecio;
+}
+
+.precio {
+  grid-area: precio;
+}
+
+.infoprincipalcompra-restaurantes {
+  grid-area: datprins;
+}
+
+.txtcomen {
+  grid-area: txtcomen;
+}
+
+.comentario {
+  grid-area: comentario;
 }
 
 /* tablet */
@@ -586,6 +694,128 @@ li::marker {
   .btnselect-compras {
     height: 40px;
     width: 90px;
+  }
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 70px;
+}
+
+#pelota1, #pelota2, #pelota3, #pelota4, #pelota5, #pelota6, #pelota7, #pelota8, #pelota9, #pelota10 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px 50px;
+  background: #ffffff;
+  animation: spin 1.5s linear infinite;
+  transform-origin: center center;
+}
+
+#pelota2 {
+  animation: spin 1.5s -0.75s linear infinite;
+}
+
+#pelota3 {
+  left: 30px;
+  animation: spin 1.5s -1.3s linear infinite;
+}
+
+#pelota4 {
+  left: 30px;
+  animation: spin 1.5s -0.55s linear infinite;
+}
+
+#pelota5 {
+  left: 60px;
+  animation: spin 1.5s -1.1s linear infinite;
+}
+
+#pelota6 {
+  left: 60px;
+  animation: spin 1.5s -0.35s linear infinite;
+}
+
+#pelota7 {
+  left: 90px;
+  animation: spin 1.5s -0.9s linear infinite;
+}
+
+#pelota8 {
+  left: 90px;
+  animation: spin 1.5s -0.15s linear infinite;
+}
+
+#pelota9 {
+  left: 120px;
+  animation: spin 1.5s -0.7s linear infinite;
+}
+
+#pelota10 {
+  left: 120px;
+  animation: spin 1.5s -0.05s linear infinite;
+}
+
+#base1, #base2, #base3, #base4, #base5 {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  width: 1px;
+  height: 10px;
+  background: #ffffff;
+  animation: flex 1.5s linear infinite;
+  transform-origin: center center;
+}
+
+#base2 {
+  left: 35px;
+  animation: flex 1.5s -1.3s linear infinite;
+}
+
+#base3 {
+  left: 65px;
+  animation: flex 1.5s -1.1s linear infinite;
+}
+
+#base4 {
+  left: 95px;
+  animation: flex 1.5s -0.9s linear infinite;
+}
+
+#base5 {
+  left: 125px;
+  animation: flex 1.5s -0.7s linear infinite;
+}
+
+@keyframes spin {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  25% {
+    transform: translateY(30px) scale(2);
+  }
+  50% {
+    transform: translateY(60px) scale(1);
+  }
+  75% {
+    transform: translateY(30px) scale(0.3);
+  }
+}
+@keyframes flex {
+  0%, 100% {
+    transform: scaleY(5);
+  }
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(5);
+  }
+  75% {
+    transform: scaleY(1);
   }
 }
 
