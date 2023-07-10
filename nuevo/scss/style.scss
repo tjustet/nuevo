@@ -458,28 +458,6 @@ li::marker{
     grid-area: vendedor;
 }
 
-/* comida/restaurantes */
-
-.divcarrusel-comida{
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.imgcarrusel-comida{
-    height: 250px;
-    width: 250px;
-}
-
-.h2carrusel-comida{
-    font-size: 190%;
-}
-
-.h5carrusel-comida{
-    width: 250px;
-}
-
 /* restaurantes */
 
 .imgcarrusel-restaurantes{
@@ -571,7 +549,7 @@ li::marker{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 30% 10%;
+    grid-template-columns: 29% 42% 29%;
     grid-template-areas: 
     "dire pago datprins";
 }
@@ -598,7 +576,7 @@ li::marker{
     margin-top: 20%;
     grid-area: pago;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
     "txtprecio precio"
@@ -628,6 +606,26 @@ li::marker{
     
 }
 
+.h2menu-restaurantes{
+    padding-top: 2%;
+}
+
+.selectcompra-restaurantes{
+    height: 25%;
+    width: 100%;
+    border-radius: var(--bs-border-radius);
+}
+
+.btncompraconfirm-restaurantes{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    background-color: $botones-color;
+    font-weight: 400;
+    display: block;
+    border-color: #230b0000;
+    color: black;
+}
 
 /* tablet */
 @media (max-width: 768px){

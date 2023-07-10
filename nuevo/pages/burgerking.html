@@ -37,10 +37,7 @@
     </div>
 
     <div class="sesion-box-header">
-      <a href="../pages/carrito.html" class="position-relative">
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2<span class="visually-hidden"></span>
-        </span>
-        <img class="carrito-header" src="../iconos/CarritoDeCompras.png" alt="Carrito"></a>
+
       <button type="button" class="btn btn-danger btnimg-header buttonsesion-header" data-bs-toggle="dropdown" aria-expanded="false" >
         <img class="imgsesion-header" src="../iconos/boton-de-cuenta-redonda-con-usuario-dentro.png" alt="Logo"></button>
       <ul class="dropdown-menu">
@@ -237,18 +234,21 @@
         <h3 class="labelcompra-restaurantes precio">$9,99</h3>
 
         <h3 class="labelcompra-restaurantes" for="">Medio de pago:</h3>
-        <select name="" id="">
-          <option selected>Seleccione su medio de pago</option>
-          <option value="">Mastercard</option>
-          <option value="">Visa</option>
-        </select>
+        <div class="form-floating">
+          <select class="selectcompra-restaurantes" id="floatingSelect" aria-label="Floating label select example">
+            <option value="">Martercard</option>
+            <option value="">Visa</option>
+          </select>
+        </div>
 
         <h3 class="labelcompra-restaurantes txtcomen" for="">Comentario:</h3>
-        <input class="inputcompra-restaurantes comentario" type="text">
-
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        </div>
       </div>
       <div class="infoprincipalcompra-restaurantes">
-
+          <button class="btn btn-outline-success btncompraconfirm-restaurantes" type="button">Comprar</button>
+          <button class="btn btn-outline-danger btncompraconfirm-restaurantes" type="button">Cancelar</button>
       </div>
     </div>
   </div>
@@ -266,7 +266,7 @@
         <div class="ayudafooter">
           <h3 class="h3sectiontiendas">Ayuda:</h3>
           <ul>
-            <li><a class="enlaces" href="">Pagina</a></li>
+            <li><a class="enlaces" href="">Página</a></li>
             <li><a class="enlaces" href="">Conflictos</a></li>
           </ul>
         </div>
@@ -301,5 +301,29 @@
       },2000);
   });
   </script> -->
+
+  <script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible alertcompra-restaurante" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Se confirmo la compra', 'success')
+  })
+}
+  </script>
+
+  
 </body>
 </html>
