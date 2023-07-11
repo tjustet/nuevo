@@ -8,8 +8,7 @@ h1, h2 {
 }
 
 .titulo {
-  margin: 10px;
-  padding: 0 0 20px;
+  margin: 2.5% 0px 2.5% 0px;
   text-align: center;
   font-size: 100px;
 }
@@ -132,10 +131,9 @@ header {
   justify-content: center;
 }
 
-/* MODIFICAR LAS IMAGENES QUE SE ENCUENTRAN DENTRO DEL CARRUSEL PARA QUE NO SE SALGAN */
 .carruselmain-index {
   height: 500px;
-  width: 75%;
+  width: 90%;
 }
 
 .imgcarrusel-index {
@@ -160,7 +158,7 @@ header {
   display: flex;
   justify-content: center;
   color: #a29d7f;
-  font-size: 75px;
+  font-size: 60px;
   font-family: TINY;
 }
 
@@ -170,7 +168,11 @@ header {
 
 /* tiendas */
 .sectiontiendas-index {
+  width: 90%;
   margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 75px;
   display: grid;
   grid-template-columns: 50% 50%;
   row-gap: 25px;
@@ -181,24 +183,23 @@ header {
 .navh2-index {
   grid-area: tittle;
   color: #a29d7f;
-  font-size: 75px;
+  font-size: 60px;
   font-family: TINY;
   text-align: center;
 }
 
 .column1-index {
   grid-area: column1;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .column2-index {
   grid-area: column2;
-  margin-left: 20px;
 }
 
 .tiendascolumn {
   background-color: #a29d7f;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 100%;
@@ -213,13 +214,17 @@ header {
 
 .divh-column {
   grid-area: txtcolumn;
+  margin-top: 2%;
 }
 
 .button-tiendas {
+  margin-top: 10%;
   height: 30px;
   width: 100px;
+  border-radius: 7%;
   background-color: #aabe9b;
-  border-color: rgba(255, 255, 255, 0);
+  border-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
   color: #230b00;
   text-align: center;
   transition: all 2s;
@@ -227,7 +232,7 @@ header {
 
 .button-tiendas:hover {
   background: radial-gradient(#aabe9b, #a29d7f);
-  border-color: rgba(255, 255, 255, 0);
+  border-color: rgb(0, 0, 0);
   transform: translate(1px, 1px);
 }
 
@@ -243,26 +248,27 @@ footer {
 
 .acercafooter {
   grid-area: acerca;
+  margin-left: 25%;
 }
 
 .ayudafooter {
   grid-area: ayuda;
+  margin-left: 25%;
 }
 
 .redesfooter {
   grid-area: redes;
+  margin-left: 25%;
 }
 
 .cuentafooter {
   grid-area: cuenta;
+  margin-left: 25%;
 }
 
-.enlacesfooter {
-  display: block;
-}
-
-li::marker {
-  color: rgba(255, 255, 255, 0); /* ELIMINAR ESTO (son los puntitos alado de las palabras) */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 /* LOGIN */
@@ -404,6 +410,7 @@ li::marker {
 
 .h2productoscomprados {
   grid-area: tittleproductos;
+  margin-top: 0.5%;
 }
 
 .boxdatos {
@@ -430,8 +437,8 @@ li::marker {
 /* restaurantes */
 .imgcarrusel-restaurantes {
   height: 100%;
-  width: 50% !important;
-  margin-left: 25%;
+  width: 40% !important;
+  margin-left: 30%;
   margin-top: 1%;
 }
 
