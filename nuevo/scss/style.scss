@@ -4,186 +4,463 @@ $letras-color: #d4cfa5 ;
 $footeryheader-color: #f8ecd4 ;
 $botones-color: #aabe9b ;
 
-h1, h2, h3, h4, h5, h6{
-    color: $letras-color;
-    font-family: TINY;
-
+h1, h2, h3, h4, h5, h6 {
+color: $letras-color;
+font-family: TINY;
 }
 
-h1, h2{
-    text-align: center;
+h1, h2 {
+text-align: center;
 }
 
-.titulo{
-    margin: 2.5% 0px 2.5% 0px;
-    text-align: center;
-    font-size: 100px;
+.titulo {
+margin: 2.5% 0px 2.5% 0px;
+text-align: center;
+font-size: 100px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+margin: 0;
+padding: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+text-decoration: none;
 }
 
-body{
-    background-color: $fondo-color;
+body {
+background-color: $fondo-color;
 }
 
 /* encabezado */
-
-header{
-    background-color: $footeryheader-color;
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 40% 25% 25%;
-    grid-template-areas: 
-    "img search btn sesion";
+header {
+background-color: $footeryheader-color;
+height: 75px;
+width: 100%;
+display: grid;
+grid-template-columns: 10% 40% 25% 25%;
+grid-template-areas: "img search btn sesion";
 }
 
-.logo-header{
-    height: 73%;
-    width: auto;
-    margin: 10px 10px;
+.logo-header {
+height: 100%;
+width: auto;
+margin-left: 10px;
 }
 
-.img-header{
-    grid-area: img;
-    height: 70px;
+.img-header {
+grid-area: img;
+height: 70px;
 }
 
-
-.carrito-header{
-    height: 60px;
-    width: auto;
-    margin-right: 15px;
+.btn-box-header {
+grid-area: btn;
+align-items: center;
 }
 
-.btn-box-header{
-    grid-area: btn;
-    align-items: center;
+.btn-header {
+margin: 0 1.5% 0 1.5%;
+height: 50%;
 }
 
-.btn-header{
-    margin: 0 1.5% 0 1.5%;
-    height: 50%;
-
+.sesion-box-header {
+margin-top: 0.5%;
+grid-area: sesion;
+text-align: right;
+height: 70px;
 }
 
-.sesion-box-header{
-    grid-area: sesion;
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 10px;
-
+.imgsesion-header {
+height: 100%;
+width: auto;
+margin-right: 10px;
 }
 
-.btnimg-header{
-    height: 75%;
-    width: 150px;
+.buttonsesion-header { 
+border-color: rgba(255, 255, 255, 0);
+color: $fondo-color;
+height: 70px;
+margin-left: 15px;
 }
 
-.imgsesion-header{
-    height: 35px;
-    width: 35px;
+.searchheader {
+margin-left: 50px;
+grid-area: search;
+align-self: center;
 }
 
-.searchheader{
-    margin-left: 50px;
-    grid-area: search;
-    align-self: center;
+.inputheader {
+width: 300px;
 }
 
-.inputheader{
-    width: 300px;
+.imglupa-header {
+height: 20px;
+width: 20px;
 }
 
-.imglupa-header{
-    height: 20px;
-    width: 20px;
+.button-header {
+background-color: $botones-color;
+border-color: rgba(255, 255, 255, 0);
+color: $fondo-color;
+transition: all 2s;
 }
 
-.button-header{
-    background-color: $botones-color;
-    border-color: rgba(255, 255, 255, 0);
-    color: $fondo-color;
-    transition: all 2s;
+.button-header:hover {
+color: $fondo-color;
+background: radial-gradient($botones-color, $bloques-color);
+border-color: rgba(255, 255, 255, 0);
+transform: translate(1px, 1px);
 }
 
-.button-header:hover{
-    color: $fondo-color;
-    background: radial-gradient($botones-color, $bloques-color);
-    border-color: rgba(255, 255, 255, 0);
-    transform: translate(1px, 1px); 
-}
-
-.buttonsearch-header{
-    background-color: $botones-color;
-    border-color: rgba(255, 255, 255, 0);
-    color: $fondo-color;
-}
-
-.buttonsesion-header{
-    background-color: $botones-color;
-    border-color: rgba(255, 255, 255, 0);
-    color: $fondo-color;
-    margin-left: 15px;
+.buttonsearch-header {
+background-color: $botones-color;
+border-color: rgba(255, 255, 255, 0);
+color: $fondo-color;
 }
 
 
 
 /* carrusel index */
-.main-index{
-    margin-top: 30px;
-    height: auto;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
+.main-index {
+margin-top: 30px;
+height: auto;
+width: 100%;
+display: flex;
+justify-content: center;
 }
 
-.carruselmain-index{
-    height: 500px;
-    width: 90%;
+.carruselmain-index {
+height: 500px;
+width: 90%;
 }
 
-.imgcarrusel-index{
-    height: 500px;
-
+.imgcarrusel-index {
+height: 500px;
 }
 
-.boton-carrusel{
-    width: 70px;
+.boton-carrusel {
+width: 70px;
 }
 
 /* mapa */
-
-.sectionmap-index{
-    margin-top: 30px;
-    height: auto;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
+.sectionmap-index {
+margin-top: 30px;
+height: auto;
+width: 100%;
+display: flex;
+justify-content: center;
 }
 
-.sectionh2-index{
-    margin-top: 30px;
-    display: flex; 
-    justify-content: center;
-    color: $bloques-color;
-    font-size: 60px;
-    font-family: TINY;
+.sectionh2-index {
+margin-top: 30px;
+display: flex;
+justify-content: center;
+color: $bloques-color;
+font-size: 60px;
+font-family: TINY;
 }
 
-.map-index{
-    width: 90%;
+.map-index {
+width: 90%;
 }
 
 /* tiendas */
-.sectiontiendas-index{
+.sectiontiendas-index {
+width: 90%;
+margin-top: 30px;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 50px;
+display: grid;
+grid-template-columns: 50% 50%;
+row-gap: 25px;
+grid-template-rows: 75px auto;
+grid-template-areas: "tittle tittle" "column1 column2";
+}
+
+.navh2-index {
+grid-area: tittle;
+color: $bloques-color;
+font-size: 60px;
+font-family: TINY;
+text-align: center;
+}
+
+.column1-index {
+grid-area: column1;
+margin-right: 20px;
+}
+
+.column2-index {
+grid-area: column2;
+}
+
+.tiendascolumn {
+background-color: $bloques-color;
+margin-bottom: 20px;
+display: grid;
+grid-template-columns: 40% 60%;
+grid-template-rows: 100%;
+grid-template-areas: "imgcolumn txtcolumn";
+}
+
+.imgcolumn {
+height: 225px;
+width: 95%;
+grid-area: imgcolumn;
+}
+
+.divh-column {
+grid-area: txtcolumn;
+margin-top: 2%;
+}
+
+.button-tiendas {
+margin-top: 10%;
+height: 30px;
+width: 100px;
+border-radius: 7%;
+background-color: $botones-color;
+border-color: rgb(0, 0, 0);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
+color: $fondo-color;
+text-align: center;
+transition: all 2s;
+}
+
+.button-tiendas:hover {
+background: radial-gradient($botones-color, $bloques-color);
+border-color: rgb(0, 0, 0);
+transform: translate(1px, 1px);
+}
+
+.sombreadoletras{
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.295);
+}
+
+.h3sectiontiendas{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+
+.h4sectiontiendas{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+
+/* FOOTER */
+footer {
+background-color: $footeryheader-color;
+height: 125px;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+grid-template-areas: "acerca ayuda redes cuenta";
+}
+
+.acercafooter {
+grid-area: acerca;
+margin-left: 25%;
+}
+
+.ayudafooter {
+grid-area: ayuda;
+margin-left: 25%;
+}
+
+.redesfooter {
+grid-area: redes;
+margin-left: 25%;
+}
+
+.cuentafooter {
+grid-area: cuenta;
+margin-left: 25%;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+/* LOGIN */
+.body-login {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.div-login {
+width: 320px;
+height: auto;
+background-color: $footeryheader-color;
+color: #8d0000;
+padding: 75px 50px 40px 50px;
+margin-top: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+}
+
+.img-login {
+background-color: $footeryheader-color;
+border-radius: 100%;
+transform: translateY(-109%);
+position: absolute;
+}
+
+.h1-login {
+    color: #8d0000;
+    margin: 10px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 1000;
+}
+
+.label-login {
+margin: 0;
+padding: 0;
+font-weight: bold;
+display: block;
+}
+
+.input-login {
+width: 100%;
+margin-bottom: 20px;
+border-radius: var(--bs-border-radius);
+border-color: rgba(0, 0, 0, 0.318);
+}
+
+.button-login {
+width: 100px;
+height: 50px;
+background-color: $botones-color;
+border-color: rgba(255, 255, 255, 0);
+color: $fondo-color;
+font-size: 25px;
+border-radius: 15%;
+}
+
+/* CREAR CUENTA CC */
+.body-cc {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.div-cc {
+width: 320px;
+height: auto;
+background-color: $footeryheader-color;
+color: #8d0000;
+padding: 75px 50px 40px 50px;
+margin-top: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 10px;
+}
+
+.img-cc {
+background-color: $footeryheader-color;
+border-radius: 100%;
+transform: translateY(-109%);
+position: absolute;
+}
+
+.h1-cc {
+    color: #8d0000;
+    margin: 10px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 1000;
+}
+
+.label-cc {
+margin: 0;
+padding: 0;
+font-weight: bold;
+display: block;
+}
+
+.input-cc {
+width: 100%;
+margin-bottom: 20px;
+border-radius: var(--bs-border-radius);
+border-color: rgba(0, 0, 0, 0.318);
+}
+
+.button-cc {
+width: 100px;
+background-color: $botones-color;
+border-color: rgba(255, 255, 255, 0);
+color: $fondo-color;
+font-size: 25px;
+border-radius: 15%;
+}
+
+/* Compras */
+.section-compras {
+height: 100%;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.searchsection-compras {
+padding: 30px 0px 75px 0px;
+}
+
+.inputsection-compras {
+width: 400px;
+}
+
+.productoscomprados {
+background-color: $bloques-color;
+display: grid;
+grid-template-rows: auto auto;
+grid-template-areas: "tittleproductos" "caracteristicascompra";
+margin-bottom: 40px;
+}
+
+.h2productoscomprados {
+grid-area: tittleproductos;
+margin-top: 0.5%;
+}
+
+.boxdatos {
+grid-area: caracteristicascompra;
+display: grid;
+grid-template-columns: 15% 70% 15%;
+grid-template-areas: "imgcompra caracteristicas vendedor";
+}
+
+.imgproducto {
+grid-area: imgcompra;
+height: 60%;
+margin: 10px 0px 0px 10px;
+}
+
+.caracteristicasproducto {
+grid-area: caracteristicas;
+}
+
+.datosvendedor {
+grid-area: vendedor;
+}
+
+/* restaurantes */
+.imgcarrusel-restaurantes {
+height: 100%;
+width: 40% !important;
+margin-left: 30%;
+margin-top: 1%;
+}
+
+.menu-restaurantes {
     width: 90%;
     margin-top: 30px;
     margin-left: 5%;
@@ -191,720 +468,395 @@ header{
     margin-bottom: 75px;
     display: grid;
     grid-template-columns: 50% 50%;
-    row-gap: 25px;
-    grid-template-rows: 75px auto;
-    grid-template-areas: 
-    "tittle tittle"
-    "column1 column2";
+    grid-template-areas: "colum1 colum2";
 }
 
-.navh2-index{
-    grid-area: tittle;
-    color: $bloques-color;
-    font-size: 60px;
-    font-family: TINY;
-    text-align: center;
+.column1-restaurantes {
+grid-area: colum1;
+margin-right: 20px;
 }
 
-.column1-index{
-    grid-area: column1;
-    margin-right: 20px;
+.column2-restaurantes {
+grid-area: colum2;
 }
 
-.column2-index{
-    grid-area: column2;
-
+.comidasmenu-restaurantes {
+background-color: $bloques-color;
+margin-bottom: 20px;
+height: 200px;
+display: grid;
+grid-template-columns: 30% 60% 10%;
+grid-template-areas: "img txt btn";
 }
 
-.tiendascolumn{
-    background-color: $bloques-color;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "imgcolumn txtcolumn";
-}
-
-.imgcolumn{
-    height: 225px;
-    width: 95%;
-    grid-area: imgcolumn;
-}
-
-.divh-column{
-    grid-area: txtcolumn;
-    margin-top: 2%;
-}
-
-.button-tiendas{
-    margin-top: 10%;
-    height: 30px;
-    width: 100px;
-    border-radius: 7%;
-    background-color: $botones-color;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
-
-    color: $fondo-color;
-    text-align: center;
-    transition: all 2s;
-}
-
-.button-tiendas:hover{
-    background: radial-gradient($botones-color, $bloques-color);
-    border-color: rgb(0, 0, 0);
-    transform: translate(1px, 1px); 
-}
-
-/* FOOTER */
-
-footer{
-    background-color: $footeryheader-color;
-    height: 125px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-areas: 
-    "acerca ayuda redes cuenta";
-}
-
-.acercafooter{
-    grid-area: acerca;
-    margin-left: 25%;
-}
-
-.ayudafooter{
-    grid-area: ayuda;
-    margin-left: 25%;
-}
-
-.redesfooter{
-    grid-area: redes;
-    margin-left: 25%;
-}
-
-.cuentafooter{
-    grid-area: cuenta;
-    margin-left: 25%;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-/* LOGIN */
-
-.body-login{
-    height: 100%;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-}
-
-.div-login{
-    width: 320px;
-    height: auto;
-    background-color: $footeryheader-color;
-    color: #8d0000;
-    padding: 75px 50px 40px 50px;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.img-login{
-    background-color: $footeryheader-color;
-    border-radius: 100%;
-    transform: translateY(-109%);
-    position: absolute;
-}
-
-.h1-login{
-    margin: 10px;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-
-.label-login{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-}
-
-.input-login{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.button-login{
-    width: 100px;
-    height: 50px;
-    background-color: $botones-color;
-    border-color: rgba(255, 255, 255, 0);
-    color: $fondo-color;
-    font-size: 25px;
-    border-radius: 15%;
-}
-
-
-/* CREAR CUENTA CC */
-
-.body-cc{
-    height: 100%;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-}
-
-.div-cc{
-    width: 320px;
-    height: auto;
-    background-color: $footeryheader-color;
-    color: #8d0000;
-    padding: 75px 50px 40px 50px;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.img-cc{
-    background-color: $footeryheader-color;
-    border-radius: 100%;
-    transform: translateY(-109%);
-    position: absolute;
-}
-
-.h1-cc{
-    margin: 10px;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-
-.label-cc{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-}
-
-.input-cc{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.button-cc{
-    width: 100px;
-    background-color: $botones-color;
-    border-color: rgba(255, 255, 255, 0);
-    color: $fondo-color;
-    font-size: 25px;
-    border-radius: 15%;
-}
-
-
-/* Compras */
-
-.section-compras{
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.searchsection-compras{
-    padding: 30px 0px 75px 0px;
-}
-
-.inputsection-compras{
-    width: 400px;
-}
-
-.productoscomprados{
-    background-color: $bloques-color;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "tittleproductos"
-    "caracteristicascompra";
-    margin-bottom: 40px;
-}
-
-.h2productoscomprados{
-    grid-area: tittleproductos;
-    margin-top: 0.5%;
-}
-
-.boxdatos{
-    grid-area: caracteristicascompra;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-areas: 
-    "imgcompra caracteristicas vendedor";
-}
-
-.imgproducto{
-    grid-area: imgcompra;
-    height: 60%;
-    margin: 10px 0px 0px 10px;
-}
-
-.caracteristicasproducto{
-    grid-area: caracteristicas;
-}
-
-.datosvendedor{
-    grid-area: vendedor;
-}
-
-/* restaurantes */
-
-.imgcarrusel-restaurantes{
-    height: 100%;
-    width: 40% !important;
-    margin-left: 30%;
-    margin-top: 1%;
-}
-
-.menu-restaurantes{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "colum1 colum2";
-}
-
-.column1-restaurantes{
-    grid-area: colum1;
-    
-}
-
-.column2-restaurantes{
-    grid-area: colum2;
-}
-
-.comidasmenu-restaurantes{
-    background-color: $bloques-color;
-    margin: 10px 10px 15px 0px;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 30% 60% 10%;
-    grid-template-areas: 
-    "img txt btn";
-    
-}
-
-.imgmenu-restaurantes{
-    height: 175px;
-    width: 175px;
+.imgmenu-restaurantes {
     grid-area: img;
-}
-
-.txtmenu-restaurantes{
-    grid-area: txt;
-}
-
-.btnmenu-restaurante{
-    margin: 10%;
-    width: auto;
-    height: 40px;
-    background-color: #8d0000;
-    color: white;
-}
-
-.h3menu-restaurantes{
-    font-size: 20px;
-}
-
-.checkbox-restaurantes{
-    margin-left: 25%;
-    height: 40%;
-    width: 40%;
-    accent-color: $fondo-color;
-}
-
-.compra-restaurantes{
-    margin: 100px 5% 100px 5%;
-    width: 90%;
-    height: 500px;
-    background-color: $bloques-color;
-    display: flex;
-    justify-content: center;
-}
-
-.divimgcompra-restaurantes{
-    background-color: $bloques-color;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    transform: translateY(-60%);
-    position: absolute;
-    text-align: center;
-}
-
-.imgcompra-restaurantes{
-    width: 20%;
-}
-
-.menucompra-restaurantes{
-    height: 100%;
+    margin-top: 6.5%;
+    height: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: 29% 42% 29%;
-    grid-template-areas: 
-    "dire pago datprins";
 }
 
-.direccioncompra-restaurantes{
-    grid-area: dire;
-    text-align: center;
+.txtmenu-restaurantes {
+grid-area: txt;
 }
 
-.labelcompra-restaurantes{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    display: block;
-    font-size: 125%;
+.btnmenu-restaurante {
+margin: 10%;
+width: auto;
+height: 40px;
+background-color: #8d0000;
+color: white;
 }
 
-.inputcompra-restaurantes{
-    width: 80%;
-    margin-bottom: 20px;
+.h3menu-restaurantes {
+font-size: 20px;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+margin-left: 5px;
 }
 
-.pagocompra-restaurantes{
-    margin-top: 20%;
-    grid-area: pago;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas: 
-    "txtprecio precio"
-    "txtmetodo metodo"
-    "txtcomen comentario";
+.checkbox-restaurantes {
+margin-left: 25%;
+height: 40%;
+width: 40%;
+accent-color: $fondo-color;
 }
 
-.txtprecio{
-    grid-area: txtprecio;
+.compra-restaurantes {
+margin: 100px 5% 50px 5%;
+width: 90%;
+height: 500px;
+background-color: $bloques-color;
+display: flex;
+justify-content: center;
 }
 
-.precio{
-    grid-area: precio;
+.divimgcompra-restaurantes {
+background-color: $bloques-color;
+border-top-left-radius: 100%;
+border-top-right-radius: 100%;
+transform: translateY(-60%);
+position: absolute;
+text-align: center;
 }
 
-
-.infoprincipalcompra-restaurantes{
-    grid-area: datprins;
+.imgcompra-restaurantes {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    width: 15%;
 }
 
-.txtcomen{
-    grid-area: txtcomen;
+.menucompra-restaurantes {
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: 29% 42% 29%;
+grid-template-areas: "dire pago datprins";
 }
 
-.comentario{
-    grid-area: comentario;
-    
+.direccioncompra-restaurantes {
+grid-area: dire;
+text-align: center;
 }
 
-.h2menu-restaurantes{
-    padding-top: 2%;
+.labelcompra-restaurantes {
+    margin-top: 5%;
+    margin-bottom: 3%;
+font-weight: bold;
+display: block;
+font-size: 125%;
 }
 
-.selectcompra-restaurantes{
-    height: 25%;
-    width: 100%;
-    border-radius: var(--bs-border-radius);
+.inputcompra-restaurantes {
+width: 90%;
+margin-bottom: 20px;
+border-radius: var(--bs-border-radius);
+border-color: #230b0000;
 }
 
-.btncompraconfirm-restaurantes{
-    margin-top: 10%;
-    margin-left: 35%;
-    width: 30%;
-    background-color: $botones-color;
-    font-weight: 400;
-    display: block;
-    border-color: #230b0000;
-    color: black;
+.pagocompra-restaurantes {
+margin-top: 20%;
+grid-area: pago;
+display: grid;
+grid-template-columns: 30% 70%;
+grid-template-rows: 33% 33% 33%;
+grid-template-areas: "txtprecio precio" "txtmetodo metodo" "txtcomen comentario";
+}
+
+.txtprecio {
+grid-area: txtprecio;
+}
+
+.precio {
+grid-area: precio;
+}
+
+.infoprincipalcompra-restaurantes {
+grid-area: datprins;
+}
+
+.txtcomen {
+grid-area: txtcomen;
+}
+
+.comentario {
+grid-area: comentario;
+}
+
+.h2menu-restaurantes {
+padding-top: 2%;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+}
+
+.selectcompra-restaurantes {
+height: 25%;
+width: 100%;
+border-radius: var(--bs-border-radius);
+ border-color: #230b0000;
+}
+
+.btncompraconfirm-restaurantes {
+margin-top: 10%;
+margin-left: 35%;
+width: 30%;
+background-color: $botones-color;
+font-weight: 400;
+display: block;
+border-color: rgba(35, 11, 0, 0);
+color: black;
 }
 
 /* tablet */
-@media (max-width: 768px){
-    .inputheader{
-        width: 100px;
-    }
-
-    .carrito-header{
-        height: 50px;
-    }
-
-    .button-header{
-        font-size: 10px;
-        height: 30%;
-        width: 90%;
-    }
-
-    .buttonsesion-header{
-        width: 61px;
-        height: 49px;
-    }
-
-    .btn-box-header{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .buttonsearch-header{
-        height: 40px;
-        width: 30px;
-    }
-
-    .imglupa-header{
-        height: 12px;
-        width: 12px;   
-    }
-
-    .h4sectiontiendas{
-        font-size: 15px;
-    }
-
-    .h3sectiontiendas{
-        font-size: 20px;
-    }
-
-    .imgproducto{
-        height: 40px;
-    }
-
+@media (max-width: 768px) {
+.inputheader {
+    width: 100px;
 }
-
+.carrito-header {
+    height: 50px;
+}
+.button-header {
+    font-size: 10px;
+    height: 30%;
+    width: 90%;
+}
+.buttonsesion-header {
+    width: 61px;
+    height: 49px;
+}
+.btn-box-header {
+    display: block;
+    margin-left: 20px;
+}
+.buttonsearch-header {
+    height: 40px;
+    width: 30px;
+}
+.imglupa-header {
+    height: 12px;
+    width: 12px;
+}
+.h4sectiontiendas {
+    font-size: 15px;
+}
+.h3sectiontiendas {
+    font-size: 20px;
+}
+.imgproducto {
+    height: 40px;
+}
+}
 /* mobil */
-@media (max-width: 425px){
-    .inputheader{
-        width: 90px;
-    }
-
-    .logo-header{
-        height: 30px;
-    }
-
-    .carrito-header{
-        height: 30px;
-    }
-
-    .button-header{
-        font-size: 10px;
-        height: 30%;
-        width: 90%;
-    }
-
-    .buttonsesion-header{
-        width: 61px;
-        height: 49px;
-    }
-
-    .carrito-header{
-        margin-right: 0px;
-    }
-
-    .carruselmain-index{
-        height: 200px;
-    }
-
-    .imgcarrusel-index{
-        height: 200px;
-    }
-
-    .sectionh2-index{
-        font-size: 60px;
-    }
-
-    .navh2-index{
-        font-size: 60px;
-    }
-
-    .sectiontiendas-index{
-        grid-template-columns: 100%;
-        grid-template-rows: 75px auto auto;
-        grid-template-areas: 
-        "tittle"
-        "colum1"
-        "colum2";
-    }
-
-    .column1-index{
-        grid-area: colum1;
-    }
-
-    .column2-index{
-        grid-area: colum2;
-    }
-
-    .h3sectiontiendas{
-        font-size: 15px;
-    }
-
-    .enlaces{
-        font-size: 10px;
-    }
-
-    .imgproducto{
-        height: 20px;
-    }
-
-    .h2productoscomprados{
-        font-size: 25px;
-    }
-
-    .h3productoscomprados{
-        font-size: 20px;
-    }
-
-    .h4productoscomprados{
-        font-size: 15px;
-    }
-
-    .h3datosvendedor{
-        font-size: 13px;
-    }
-
-    .btnselect-compras{
-        height: 40px;
-        width: 90px;
-        
-    }
-
+@media (max-width: 425px) {
+.inputheader {
+    width: 90px;
+}
+.logo-header {
+    height: 30px;
+}
+.carrito-header {
+    height: 30px;
+}
+.button-header {
+    font-size: 10px;
+    height: 30%;
+    width: 90%;
+}
+.buttonsesion-header {
+    width: 61px;
+    height: 49px;
+}
+.carrito-header {
+    margin-right: 0px;
+}
+.carruselmain-index {
+    height: 200px;
+}
+.imgcarrusel-index {
+    height: 200px;
+}
+.sectionh2-index {
+    font-size: 60px;
+}
+.navh2-index {
+    font-size: 60px;
+}
+.sectiontiendas-index {
+    grid-template-columns: 100%;
+    grid-template-rows: 75px auto auto;
+    grid-template-areas: "tittle" "colum1" "colum2";
+}
+.column1-index {
+    grid-area: colum1;
+}
+.column2-index {
+    grid-area: colum2;
+}
+.h3sectiontiendas {
+    font-size: 15px;
+}
+.enlaces {
+    font-size: 10px;
+}
+.imgproducto {
+    height: 20px;
+}
+.h2productoscomprados {
+    font-size: 25px;
+}
+.h3productoscomprados {
+    font-size: 20px;
+}
+.h4productoscomprados {
+    font-size: 15px;
+}
+.h3datosvendedor {
+    font-size: 13px;
+}
+.btnselect-compras {
+    height: 40px;
+    width: 90px;
+}
+}
+.wrapper {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 140px;
+height: 70px;
 }
 
-.wrapper{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 140px;
-    height: 70px;
+#pelota1, #pelota2, #pelota3, #pelota4, #pelota5, #pelota6, #pelota7, #pelota8, #pelota9, #pelota10 {
+position: absolute;
+width: 10px;
+height: 10px;
+border-radius: 50px 50px;
+background: #ffffff;
+animation: spin 1.5s linear infinite;
+transform-origin: center center;
 }
 
-#pelota1, #pelota2, #pelota3, #pelota4, #pelota5, #pelota6, #pelota7, #pelota8, #pelota9, #pelota10{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50px 50px;
-    background: #ffffff;
-    animation: spin 1.5s linear infinite;
-    transform-origin: center center;
+#pelota2 {
+animation: spin 1.5s -0.75s linear infinite;
 }
 
-#pelota2{
-    animation: spin 1.5s -0.75s linear infinite;
+#pelota3 {
+left: 30px;
+animation: spin 1.5s -1.3s linear infinite;
 }
 
-#pelota3{
-    left: 30px;
-    animation: spin 1.5s -1.3s linear infinite;
+#pelota4 {
+left: 30px;
+animation: spin 1.5s -0.55s linear infinite;
 }
 
-#pelota4{
-    left: 30px;
-    animation: spin 1.5s -0.55s linear infinite;
+#pelota5 {
+left: 60px;
+animation: spin 1.5s -1.1s linear infinite;
 }
 
-#pelota5{
-    left: 60px;
-    animation: spin 1.5s -1.1s linear infinite;
+#pelota6 {
+left: 60px;
+animation: spin 1.5s -0.35s linear infinite;
 }
 
-#pelota6{
-    left: 60px;
-    animation: spin 1.5s -0.35s linear infinite;
+#pelota7 {
+left: 90px;
+animation: spin 1.5s -0.9s linear infinite;
 }
 
-#pelota7{
-    left: 90px;
-    animation: spin 1.5s -0.9s linear infinite;
+#pelota8 {
+left: 90px;
+animation: spin 1.5s -0.15s linear infinite;
 }
 
-#pelota8{
-    left: 90px;
-    animation: spin 1.5s -0.15s linear infinite;
+#pelota9 {
+left: 120px;
+animation: spin 1.5s -0.7s linear infinite;
 }
 
-#pelota9{
-    left: 120px;
-    animation: spin 1.5s -0.7s linear infinite;
+#pelota10 {
+left: 120px;
+animation: spin 1.5s -0.05s linear infinite;
 }
 
-#pelota10{
-    left: 120px;
-    animation: spin 1.5s -0.05s linear infinite;
+#base1, #base2, #base3, #base4, #base5 {
+position: absolute;
+top: 30px;
+left: 5px;
+width: 1px;
+height: 10px;
+background: #ffffff;
+animation: flex 1.5s linear infinite;
+transform-origin: center center;
 }
 
-#base1, #base2, #base3, #base4, #base5{
-    position: absolute;
-    top: 30px;
-    left: 5px;
-    width: 1px;
-    height: 10px;
-    background: #ffffff;
-    animation: flex 1.5s linear infinite;
-    transform-origin: center center;
-} 
-
-#base2{
-    left: 35px;
-    animation: flex 1.5s -1.3s linear infinite
+#base2 {
+left: 35px;
+animation: flex 1.5s -1.3s linear infinite;
 }
 
-#base3{
-    left: 65px;
-    animation: flex 1.5s -1.1s linear infinite
+#base3 {
+left: 65px;
+animation: flex 1.5s -1.1s linear infinite;
 }
 
-#base4{
-    left: 95px;
-    animation: flex 1.5s -0.9s linear infinite
+#base4 {
+left: 95px;
+animation: flex 1.5s -0.9s linear infinite;
 }
 
-#base5{
-    left: 125px;
-    animation: flex 1.5s -0.7s linear infinite
+#base5 {
+left: 125px;
+animation: flex 1.5s -0.7s linear infinite;
 }
 
-@keyframes spin{
-    0%, 100% {
-        transform: translateY(0px) scale(1);
-    }
-    25% {
-        transform: translateY(30px) scale(2);
-    }
-    50% {
-        transform: translateY(60px) scale(1);
-    }
-    75% {
-        transform: translateY(30px) scale(0.3);
-    }
+@keyframes spin {
+0%, 100% {
+    transform: translateY(0px) scale(1);
+}
+25% {
+    transform: translateY(30px) scale(2);
+}
+50% {
+    transform: translateY(60px) scale(1);
+}
+75% {
+    transform: translateY(30px) scale(0.3);
+}
+}
+@keyframes flex {
+0%, 100% {
+    transform: scaleY(5);
+}
+25% {
+    transform: scaleY(1);
+}
+50% {
+    transform: scaleY(5);
+}
+75% {
+    transform: scaleY(1);
+}
 }
 
-@keyframes flex{
-    0%, 100%{
-        transform: scaleY(5);
-    }
-    25%{
-        transform: scaleY(1);
-    }
-    50%{
-        transform: scaleY(5);
-    }
-    75%{
-        transform: scaleY(1);
-    }
-}
-
-
+/*# sourceMappingURL=style.css.map */
