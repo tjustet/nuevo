@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logo circulo blanco.png" type="image/x-icon">
     <title>KFC · Justtini</title>
 </head>
 <body>
   <header>
     <div class="img-header">
-        <a href="../index.html"><img class="logo-header" src="../img/images.png" alt="Logo"></a>
+        <a href="../index.html"><img class="logo-header" src="../img/logo fondo marron-trazo beige.png" alt="Logo"></a>
     </div>
     <div class="btn-group btn-box-header">
       <a type="button" class="btn btn-danger btn-header button-header" href="../pages/compras.html">Compras</a>
@@ -218,6 +219,43 @@
 </section>
 
 
+<div class="compra-restaurantes">
+  <div class="divimgcompra-restaurantes">
+    <img src="../iconos/CarritoDeCompras.png" alt="Compras" class="imgcompra-restaurantes">
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 50%; background-color: #aabe9b"></div>
+    </div>
+  </div>
+  <div class="menucompra-restaurantes">
+    <div class="direccioncompra-restaurantes">
+      <h3 class="labelcompra-restaurantes" for="">Su dirección:</h3>
+      <input class="inputcompra-restaurantes" type="text">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44211.20492199496!2d-58.433947625339826!3d-34.55311315722129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688683510173!5m2!1ses!2sar" 
+      width="90%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="pagocompra-restaurantes">
+      <h3 class="labelcompra-restaurantes txtprecio">Precio final:</h3>
+      <h3 class="labelcompra-restaurantes precio">$9,99</h3>
+
+      <h3 class="labelcompra-restaurantes" for="">Medio de pago:</h3>
+      <div class="form-floating">
+        <select class="selectcompra-restaurantes" id="floatingSelect" aria-label="Floating label select example">
+          <option value="">Martercard</option>
+          <option value="">Visa</option>
+        </select>
+      </div>
+
+      <h3 class="labelcompra-restaurantes txtcomen" for="">Comentario:</h3>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+      </div>
+    </div>
+    <div class="infoprincipalcompra-restaurantes">
+        <button class="btn btn-outline-success btncompraconfirm-restaurantes" type="button">Comprar</button>
+        <button class="btn btn-outline-danger btncompraconfirm-restaurantes" type="button">Cancelar</button>
+    </div>
+  </div>
+</div>
 
 
 
