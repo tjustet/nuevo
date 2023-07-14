@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Justtini</title>
     <meta name="description" content="En este lugar podras comprar tus comidas de tus restaurantes favoritos desde la comodidad de tu casa, tu solo pide y nosotros no encargamos del resto ☺">
@@ -124,7 +126,7 @@
     <h2 class="navh2-index">Tiendas</h2>
     <!-- columna 1 -->
     <div class="column1-index">
-      <div class="tiendascolumn">
+      <div class="tiendascolumn tiendascolumn1">
         <div>
           <img class="imgcolumn" src="./img/burgerking/burguerking Av. Córdoba 2332, C1120 CABA 8-22hs.jpg" alt="ImagenMomentanea">
         </div>
@@ -177,7 +179,7 @@
         </div>
         <div class="divh-column">
           <h3 class="h3sectiontiendas">Nombre de la tienda</h3>
-          <h4 class="h4sectiontiendas">Dirección: Av. Samta Fe 4607</h4>
+          <h4 class="h4sectiontiendas">Dirección: Av. Santa Fe 4607</h4>
           <h4 class="h4sectiontiendas">Horario: 06:00-00:00</h4>
           <a href="./pages/kfc.html" type="button" class="button-tiendas">Ver Menu</a>
         </div>
@@ -196,37 +198,32 @@
     </div>
   </nav>
 
-  <footer>
-    <div class="acercafooter">
-      <h3 class="sombreadoletras">Acerca de:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Nosotros</a></li>
-        <li><a class="enlaces" href="">Función</a></li>
-      </ul>
+
+  <footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="logofooter">
+      <img src="./img/logo fondo marron-trazo beige.png" alt="" class="imgfooter">
     </div>
-    <div class="ayudafooter">
-      <h3 class="sombreadoletras">Ayuda:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Página</a></li>
-        <li><a class="enlaces" href="">Conflictos</a></li>
-      </ul>
-    </div>
-    <div class="redesfooter">
-      <h3 class="sombreadoletras">Redes Sociales:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Facebook</a></li>
-        <li><a class="enlaces" href="">Instagram</a></li>
-        <li><a class="enlaces" href="">Twitter</a></li>
-      </ul>
-    </div>
-    <div class="cuentafooter">
-      <h3 class="sombreadoletras">Mi Cuenta:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Resumen</a></li>
-        <li><a class="enlaces" href="">Favoritos</a></li>
-        <li><a class="enlaces" href="">Tienda</a></li>
-      </ul>
-    </div>
+      <div class="col-md-4 d-flex align-items-center nombre">
+        <h3 class="mb-3 mb-md-0 text-muted">Justtini</h3>
+      </div>
+      <!-- Section: Social media -->
+      <section class="mb-4 redes">
+        <div class="redes1">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 facebook" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 twitter" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="redes2">
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 google" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 instagram" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 linkedin" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
   </footer>
   </div>
 

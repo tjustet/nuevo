@@ -64,14 +64,14 @@ height: 50%;
 }
 
 .sesion-box-header {
-margin-top: 0.5%;
+margin-top: 1%;
 grid-area: sesion;
 text-align: right;
 height: 70px;
 }
 
 .imgsesion-header {
-height: 100%;
+height: 95%;
 width: auto;
 margin-right: 10px;
 }
@@ -252,33 +252,37 @@ background-color: $footeryheader-color;
 height: 125px;
 width: 100%;
 display: grid;
-grid-template-columns: repeat(4, 25%);
-grid-template-areas: "acerca ayuda redes cuenta";
+grid-template-columns: 25% 25% 50%;
+grid-template-areas: "logofooter nombre redes";
 }
 
-.acercafooter {
-grid-area: acerca;
-margin-left: 25%;
+.logofooter{
+    grid-area: logofooter;
+    height: 125px;
+    text-align: right;
 }
 
-.ayudafooter {
-grid-area: ayuda;
-margin-left: 25%;
+.nombre{
+    grid-area: nombre;
+    height: 125;
+    width: 100%;
+    text-align: center;
+    margin-left: 25px;
 }
 
-.redesfooter {
-grid-area: redes;
-margin-left: 25%;
+.redes{
+    grid-area: redes;
+    height: 125;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
-.cuentafooter {
-grid-area: cuenta;
-margin-left: 25%;
-}
-
-ul {
-list-style: none;
-padding: 0;
+.imgfooter {
+    margin-top: 20px;
+    height: 60%;
+    width: auto;
 }
 
 /* LOGIN */
@@ -420,9 +424,12 @@ width: 400px;
 
 .productoscomprados {
 background-color: $bloques-color;
-display: grid;
-grid-template-rows: auto auto;
-grid-template-areas: "tittleproductos" "caracteristicascompra";
+width: 90%;
+margin-top: 30px;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 50px;
+height: 300px;
 margin-bottom: 40px;
 }
 
@@ -434,22 +441,36 @@ margin-top: 0.5%;
 .boxdatos {
 grid-area: caracteristicascompra;
 display: grid;
-grid-template-columns: 15% 70% 15%;
-grid-template-areas: "imgcompra caracteristicas vendedor";
+grid-template-columns: 30% 70%;
+grid-template-areas: "tienda caracteristicas";
+}
+
+.h3datosvendedor{
+    margin-top: 3%;
+}
+
+.tienda{
+    grid-area: tienda;
+    text-align: center;
 }
 
 .imgproducto {
-grid-area: imgcompra;
 height: 60%;
 margin: 10px 0px 0px 10px;
 }
 
 .caracteristicasproducto {
 grid-area: caracteristicas;
+text-align: center;
+}
+
+.h3productoscomprados{
+    margin-top: 3%;
 }
 
 .datosvendedor {
 grid-area: vendedor;
+text-align: center;
 }
 
 /* restaurantes */
@@ -575,6 +596,7 @@ border-color: #230b0000;
 
 .pagocompra-restaurantes {
 margin-top: 20%;
+margin-left: 10px;
 grid-area: pago;
 display: grid;
 grid-template-columns: 30% 70%;
@@ -590,8 +612,12 @@ grid-area: txtprecio;
 grid-area: precio;
 }
 
-.infoprincipalcompra-restaurantes {
-grid-area: datprins;
+.txtmetodo{
+    grid-area: txtmetodo;
+}
+
+.metodo{
+    grid-area: metodo;
 }
 
 .txtcomen {
@@ -600,6 +626,10 @@ grid-area: txtcomen;
 
 .comentario {
 grid-area: comentario;
+}
+
+.infoprincipalcompra-restaurantes {
+grid-area: datprins;
 }
 
 .h2menu-restaurantes {
@@ -630,62 +660,85 @@ color: black;
 .inputheader {
     width: 100px;
 }
-.carrito-header {
-    height: 50px;
-}
 .button-header {
-    font-size: 10px;
+    border-radius: var(--bs-border-radius) !important;
+    font-size: 15px;
     height: 30%;
     width: 90%;
-}
-.buttonsesion-header {
-    width: 61px;
-    height: 49px;
+    margin: 7px 0 0 0;
+    padding: 0%;
 }
 .btn-box-header {
     display: block;
-    margin-left: 20px;
-}
-.buttonsearch-header {
-    height: 40px;
-    width: 30px;
 }
 .imglupa-header {
     height: 12px;
     width: 12px;
 }
 .h4sectiontiendas {
-    font-size: 15px;
-}
-.h3sectiontiendas {
     font-size: 20px;
 }
+.h3sectiontiendas {
+    font-size: 25px;
+}
 .imgproducto {
-    height: 40px;
+    height: 50%;
+}
+.carruselmain-index{
+    height: 300px;
+}
+.imgcarrusel-index{
+    height: 300px;
+}
+.imgcarrusel-restaurantes{
+    height: 250px;
+    width: auto;
+}
+.h2menu-restaurantes{
+    font-size: 20px;
+}
+.h3menu-restaurantes{
+    font-size: 15px;
+}
+.checkbox-restaurantes{
+    margin-top: 125px;
+    height: 60%;
+    width: 60%;
+}
+.divimgcompra-restaurantes{
+    width: 300px;
+}
+.btncompraconfirm-restaurantes{
+    width: 50%;
 }
 }
+
 /* mobil */
 @media (max-width: 425px) {
 .inputheader {
     width: 90px;
 }
-.logo-header {
-    height: 30px;
-}
-.carrito-header {
-    height: 30px;
-}
 .button-header {
     font-size: 10px;
+    padding-top: 3px;
     height: 30%;
     width: 90%;
+}
+.buttonsearch-header{
+    display: none;
 }
 .buttonsesion-header {
     width: 61px;
     height: 49px;
 }
-.carrito-header {
-    margin-right: 0px;
+.titulo{
+    font-size: 60px;
+}
+.sectionh2-index{
+    font-size: 40px;
+}
+.navh2-index{
+    font-size: 40px;
 }
 .carruselmain-index {
     height: 200px;
@@ -693,19 +746,14 @@ color: black;
 .imgcarrusel-index {
     height: 200px;
 }
-.sectionh2-index {
-    font-size: 60px;
-}
-.navh2-index {
-    font-size: 60px;
-}
 .sectiontiendas-index {
     grid-template-columns: 100%;
-    grid-template-rows: 75px auto auto;
+    grid-template-rows: 50px auto auto;
     grid-template-areas: "tittle" "colum1" "colum2";
 }
 .column1-index {
     grid-area: colum1;
+    margin-right: 0;
 }
 .column2-index {
     grid-area: colum2;
@@ -719,6 +767,16 @@ color: black;
 .imgproducto {
     height: 20px;
 }
+.boxdatos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "tienda"
+    "caracteristicas";
+}
+.imgproducto{
+    height: 100px;
+}
 .h2productoscomprados {
     font-size: 25px;
 }
@@ -729,13 +787,146 @@ color: black;
     font-size: 15px;
 }
 .h3datosvendedor {
-    font-size: 13px;
+    font-size: 30px;
 }
 .btnselect-compras {
     height: 40px;
     width: 90px;
 }
+footer {
+    height: 100px;
 }
+.logofooter{
+    height: 100px;
+}
+.nombre{
+    height: 100;
+    font-size: 10PX;
+}
+
+.imgfooter {
+    margin-top: 13px;
+    height: 60%;
+    width: auto;
+}
+.redes{
+    margin: 0 !important;
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "redes1"
+    "redes2"
+}
+.redes1{
+    grid-area: redes1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "red1 red2"
+}
+.facebook{
+    grid-area: red1;
+}
+.twitter{
+    grid-area: red2;
+}
+.redes2{
+    grid-area: redes2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+    "red3 red4 red5"
+}
+.google{
+    grid-area: red3;
+}
+.instagram{
+    grid-area: red4;
+}
+.linkedin{
+    grid-area: red5;
+}
+.menu-restaurantes{
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "colum1"
+    "colum2";
+}
+.column1-restaurantes{
+    margin-right: 0;
+}
+.comidasmenu-restaurantes{
+    height: 175px;
+}
+.imgmenu-restaurantes{
+    height: 50%;
+}
+.checkbox-restaurantes{
+    margin-top: 85px;
+}
+.divimgcompra-restaurantes{
+    width: 200px;
+}
+.btncompraconfirm-restaurantes{
+    padding: 3px 6px 3px 6px;
+    margin-top: 75%;
+    font-size: 10px;
+    width: 60%;
+}
+.pagocompra-restaurantes {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 13%);
+    grid-template-areas: 
+    "txtprecio"
+    "precio" 
+    "txtmetodo"
+    "metodo" 
+    "txtcomen"
+    "comentario";
+}
+.selectcompra-restaurantes {
+    height: 60%;
+}
+.map-restaurantes{
+    display: none;
+}
+.direccioncompra-restaurantes{
+    display: none;
+}
+.compra-restaurantes{
+    height: 350px;
+}
+.menucompra-restaurantes{
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "pago datprins";
+}
+.imgcarrusel-restaurantes{
+    height: 150px;
+}
+.logo-header{
+    height: 90%;
+}
+.imgsesion-header{
+    height: 110%;
+    margin-top: 5px;
+}
+.div-login{
+    margin-top: 100px;
+}
+.div-cc{
+    margin-top: 100px;
+}
+.button-login{
+    padding-top: 1px;
+    font-size: 15px;
+    height: 25px;
+    width: 125px;
+}
+}
+/* CARGA INICIO */
 .wrapper {
 position: absolute;
 left: 50%;

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo circulo blanco.png" type="image/x-icon">
     <title>Burger King · Justtini</title>
@@ -80,25 +82,16 @@
         <div class="carousel-item active">
           <a href="#stacker-quintuple">
             <img src="../img/burgerking/stacker-quintuple.png" class="w-100 imgcarrusel-restaurantes" alt="comida">
-            <div class="carousel-caption d-none d-md-block txtcarrusel">
-              <h5 style="color: white; ">Stacker quintuple</h5>
-            </div>
           </a>
         </div>
         <div class="carousel-item">
           <a href="#CHEESEONIONDOBLE">
             <img src="../img/burgerking/CHEESEONIONDOBLE.png" class="w-100 imgcarrusel-restaurantes" alt="Agronomia">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: white;">Cheese Onion Doble</h5>
-            </div>
           </a>
         </div>
         <div class="carousel-item">
           <a href="#Stacker-XL-Triple">
             <img src="../img/burgerking/Stacker XL Triple.png" class="w-100 imgcarrusel-restaurantes" alt="Moda">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Stacker XL Triple</h5>
-            </div>
           </a>
         </div>
       </div>
@@ -224,26 +217,26 @@
         <h3 class="labelcompra-restaurantes" for="">Su dirección:</h3>
         <input class="inputcompra-restaurantes" type="text">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44211.20492199496!2d-58.433947625339826!3d-34.55311315722129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688683510173!5m2!1ses!2sar" 
-        width="90%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="90%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-restaurantes"></iframe>
       </div>
       <div class="pagocompra-restaurantes">
         <h3 class="labelcompra-restaurantes txtprecio">Precio final:</h3>
         <h3 class="labelcompra-restaurantes precio">$9,99</h3>
 
-        <h3 class="labelcompra-restaurantes" for="">Medio de pago:</h3>
-        <div class="form-floating">
-          <select class="selectcompra-restaurantes" id="floatingSelect" aria-label="Floating label select example">
+        <h3 class="labelcompra-restaurantes txtmetodo" for="">Medio de pago:</h3>
+        <div class="form-floating metodo">
+          <select class="selectcompra-restaurantes " id="floatingSelect" aria-label="Floating label select example">
             <option value="">Martercard</option>
             <option value="">Visa</option>
           </select>
         </div>
 
         <h3 class="labelcompra-restaurantes txtcomen" for="">Comentario:</h3>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <div class="form-floating comentario">
+          <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
         </div>
       </div>
-      <div class="infoprincipalcompra-restaurantes">
+      <div class="infoprincipalcompra-restaurantes ">
           <button class="btn btn-outline-success btncompraconfirm-restaurantes" type="button">Comprar</button>
           <button class="btn btn-outline-danger btncompraconfirm-restaurantes" type="button">Cancelar</button>
       </div>
@@ -252,38 +245,33 @@
 
 
   
-  <footer>
-    <div class="acercafooter">
-      <h3 class="sombreadoletras">Acerca de:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Nosotros</a></li>
-        <li><a class="enlaces" href="">Función</a></li>
-      </ul>
+  <footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="logofooter">
+      <img src="../img/logo fondo marron-trazo beige.png" alt="" class="imgfooter">
     </div>
-    <div class="ayudafooter">
-      <h3 class="sombreadoletras">Ayuda:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Página</a></li>
-        <li><a class="enlaces" href="">Conflictos</a></li>
-      </ul>
-    </div>
-    <div class="redesfooter">
-      <h3 class="sombreadoletras">Redes Sociales:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Facebook</a></li>
-        <li><a class="enlaces" href="">Instagram</a></li>
-        <li><a class="enlaces" href="">Twitter</a></li>
-      </ul>
-    </div>
-    <div class="cuentafooter">
-      <h3 class="sombreadoletras">Mi Cuenta:</h3>
-      <ul>
-        <li><a class="enlaces" href="">Resumen</a></li>
-        <li><a class="enlaces" href="">Favoritos</a></li>
-        <li><a class="enlaces" href="">Tienda</a></li>
-      </ul>
-    </div>
-  </footer>  </div>
+      <div class="col-md-4 d-flex align-items-center nombre">
+        <h3 class="mb-3 mb-md-0 text-muted">Justtini</h3>
+      </div>
+      <!-- Section: Social media -->
+      <section class="mb-4 redes">
+        <div class="redes1">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 facebook" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 twitter" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="redes2">
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 google" href="#!" role="button"><i class="fab fa-google"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 instagram" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1 linkedin" href="#!" role="button"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+  </footer>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript">
