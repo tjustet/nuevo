@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Supermercado</title>
+</head>
+<body>
+  <h1>Carrito de Supermercado</h1>
+  
+  <label>
+    <input type="checkbox" class="item" value="Manzanas"> Manzanas
+  </label>
+  <label>
+    <input type="checkbox" class="item" value="Leche"> Leche
+  </label>
+  <label>
+    <input type="checkbox" class="item" value="Pan"> Pan
+  </label>
+  <label>
+    <input type="checkbox" class="item" value="Huevos"> Huevos
+  </label>
+  
+  <p>Total de productos en el carrito: <span id="total">0</span></p>
+  
+  <script>
+    const checkboxes = document.querySelectorAll('.item');
+    const totalSpan = document.getElementById('total');
+    
+    let totalItems = 0;
+    
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          totalItems++;
+        } else {
+          totalItems--;
+        }
+        totalSpan.textContent = totalItems;
+      });
+    });
+  </script>
+</body>
+</html>
