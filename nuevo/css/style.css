@@ -647,6 +647,16 @@ footer {
   color: black;
 }
 
+.divtextCompra-restaurantes {
+  margin-left: 2.5%;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+  width: 95%;
+  text-align: center;
+  color: #d4cfa5;
+  font-size: 130%;
+}
+
 /* tablet */
 @media (max-width: 768px) {
   .inputheader {

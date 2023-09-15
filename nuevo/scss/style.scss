@@ -645,15 +645,26 @@ border-radius: var(--bs-border-radius);
 }
 
 .btncompraconfirm-restaurantes {
-margin-top: 10%;
-margin-left: 35%;
-width: 30%;
-background-color: $botones-color;
-font-weight: 400;
-display: block;
-border-color: rgba(35, 11, 0, 0);
-color: black;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    background-color: $botones-color;
+    font-weight: 400;
+    display: block;
+    border-color: rgba(35, 11, 0, 0);
+    color: black;
 }
+
+.divtextCompra-restaurantes{
+    margin-left: 2.5%;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+    width: 95%;
+    text-align: center;
+    color: $letras-color;
+    font-size: 130%;
+}
+
 
 /* tablet */
 @media (max-width: 768px) {
@@ -1049,5 +1060,7 @@ animation: flex 1.5s -0.7s linear infinite;
     transform: scaleY(1);
 }
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

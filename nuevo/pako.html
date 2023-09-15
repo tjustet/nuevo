@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" value="1" class="mi-checkbox"> Checkbox 1
+    <input type="checkbox" value="2" class="mi-checkbox"> Checkbox 2
+    <input type="checkbox" value="3" class="mi-checkbox"> Checkbox 3
+    <!-- ... otros checkboxes ... -->
+    
+    <div id="contenedor-nombres"></div>
+    <div id="contenedor-precio-total"></div>
+    <button id="desmarcar-todos">Desmarcar Todos</button>
+
+    <script>
+// Supongamos que tienes un array de objetos que contiene "id", "nombre" y "precio"
+const arrayDeDatos = [
+  { id: 1, nombre: "Nombre 1", precio: 10 },
+  { id: 2, nombre: "Nombre 2", precio: 20 },
+  { id: 3, nombre: "Nombre 3", precio: 30 },
+  // ... otros datos ...
+];
+
+const checkboxes = document.querySelectorAll('.mi-checkbox');
+const contenedorNombres = document.getElementById('contenedor-nombres');
+const contenedorPrecioTotal = document.getElementById('contenedor-precio-total');
+
+// Agrega un evento de cambio a todos los checkboxes
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function () {
+    actualizarNombresSeleccionados();
+    actualizarPrecioTotal();
+    guardarSeleccionEnLocalStorage();
+  });
+});
+
+// Función para actualizar y mostrar los nombres de los checkboxes seleccionados
+function actualizarNombresSeleccionados() {
+  const nombresSeleccionados = [];
+
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      const idBuscado = parseInt(checkbox.value);
+      const nombreEncontrado = buscarNombrePorId(idBuscado);
+      nombresSeleccionados.push(nombreEncontrado);
+    }
+  });
+
+  contenedorNombres.textContent = 'Nombres seleccionados: ' + nombresSeleccionados.join(', ');
+}
+
+// Función para buscar el nombre por "id"
+function buscarNombrePorId(idBuscado) {
+  for (let i = 0; i < arrayDeDatos.length; i++) {
+    if (arrayDeDatos[i].id === idBuscado) {
+      return arrayDeDatos[i].nombre;
+    }
+  }
+  return 'No encontrado';
+}
+
+// Función para actualizar y mostrar el precio total de los checkboxes seleccionados
+function actualizarPrecioTotal() {
+  let precioTotal = 0;
+
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      const idBuscado = parseInt(checkbox.value);
+      const elementoEncontrado = arrayDeDatos.find(item => item.id === idBuscado);
+      if (elementoEncontrado) {
+        precioTotal += elementoEncontrado.precio;
+      }
+    }
+  });
+
+  contenedorPrecioTotal.textContent = 'Precio total: ' + precioTotal.toFixed(2); // Formatea el precio a dos decimales
+}
+
+// Función para guardar la selección en localStorage
+function guardarSeleccionEnLocalStorage() {
+  const seleccion = [];
+
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      seleccion.push(checkbox.value);
+    }
+  });
+
+  localStorage.setItem('seleccionCheckboxes', JSON.stringify(seleccion));
+}
+
+// Recuperar la selección desde localStorage al cargar la página
+function cargarSeleccionDesdeLocalStorage() {
+  const seleccionGuardada = localStorage.getItem('seleccionCheckboxes');
+
+  if (seleccionGuardada) {
+    const seleccion = JSON.parse(seleccionGuardada);
+
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = seleccion.includes(checkbox.value);
+    });
+
+    actualizarNombresSeleccionados();
+    actualizarPrecioTotal(); // Actualiza el precio total al cargar la selección
+  }
+}
+
+const desmarcarTodosButton = document.getElementById('desmarcar-todos');
+desmarcarTodosButton.addEventListener('click', function () {
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false; // Desmarca todos los checkboxes
+  });
+  actualizarNombresSeleccionados(); // Actualiza los nombres seleccionados (y el precio total)
+});
+
+
+// Cargar la selección almacenada desde localStorage al cargar la página
+cargarSeleccionDesdeLocalStorage();
+
+    </script>
+</body>
+</html>
